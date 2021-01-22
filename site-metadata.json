@@ -1,0 +1,71 @@
+{
+    "description": "Asnus Blog Teknoloji Konusunda Makaleleri Paylaştığımız Bir Web Sitesidir.",
+    "layout_style": "overflow",
+    "palette": "blue",
+    "header": {
+        "title": "Asnus",
+        "tagline": "Teknolojiye dair ipuçları..",
+        "profile_img": "images/logo.png",
+        "profile_img_alt": "Author avatar",
+        "background": "dark",
+        "has_nav": true,
+        "nav_links": [
+            {
+                "label": "ANASAYFA",
+                "url": "/",
+                "style": "link"
+            },
+            {
+                "label": "Blog",
+                "url": "/blog/",
+                "style": "link"
+            },
+            {
+                "label": "Hakkımızda",
+                "url": "/about/",
+                "style": "link"
+            },
+            {
+                "label": "İletişim",
+                "url": "/contact/",
+                "style": "link"
+            }
+        ],
+        "has_social": true,
+        "social_links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/asnuscom",
+                "style": "icon",
+                "icon_class": "fa-github",
+                "new_window": true
+            },
+            {
+                "label": "Twitter",
+                "url": "https://twitter.com/asnusweb",
+                "style": "icon",
+                "icon_class": "fa-twitter",
+                "new_window": true
+            },
+            {
+                "label": "Instagram",
+                "url": "https://www.instagram.com/asnusweb",
+                "style": "icon",
+                "icon_class": "fa-instagram",
+                "new_window": true
+            },
+            {
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/",
+                "style": "icon",
+                "icon_class": "fa-linkedin",
+                "new_window": true
+            }
+        ]
+    },
+    "footer": {
+        "content": "©2021 ASNUS. ALL RIGHT ARE RESERVED"
+    },
+    "title": "ASNUS",
+    "favicon": "images/favicon.ico"
+}
