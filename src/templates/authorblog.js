@@ -18,14 +18,14 @@ export const query = graphql`
 
 export default class Blog extends React.Component {
     render() {
-        let display_posts = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'),function(x){return x.frontmatter.author==="ihsansunman"}), 'frontmatter.date', 'desc');
+        let display_posts = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'),function(x){return x.frontmatter.author===x.frontmatter.excerpt}), 'frontmatter.date', 'desc');
         console.log(this.props)
         return (
             <Layout {...this.props}>
               <div className="underline authorHeader">
               <header className="row">
                 <h2>{_.get(this.props, 'pageContext.frontmatter.title', null)}'a ait gönderiler</h2>
-                <button className="button portfolyoButton" href={withPrefix("http://"+_.get(this.props, 'pageContext.frontmatter.excerpt', null))}>Portfolyo & Özgeçmiş</button>
+                <button className="button portfolyoButton" onClick={"location.href="+withPrefix("http://"+_.get(this.props, 'pageContext.frontmatter.excerpt', null))}>Portfolyo & Özgeçmiş</button>
               </header>
               </div>
               <div className="post-feed">
