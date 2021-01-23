@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Javascript'te bir nesne dizisi nasıl sıralanır?
 subtitle: >-
   Sort metoduyla bir diziyi sıralamak oldukça kolay, ancak bu dizi, bir nesne

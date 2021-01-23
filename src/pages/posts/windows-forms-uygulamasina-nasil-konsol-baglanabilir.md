@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Windows Forms uygulamasına nasıl konsol bağlanabilir?
 subtitle: >-
   Daha önce oluşturduğumuz Forms uygulamasında çeşitli sebeplerden dolayı konsol

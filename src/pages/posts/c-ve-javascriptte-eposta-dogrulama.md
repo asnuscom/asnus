@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: 'C# ve JavaScript''te E-Posta Doğrulama'
 subtitle: >-
   Bir metnin e-posta olup olmadığını doğrulamak isteyebilir. Bunu iki farklı

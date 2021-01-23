@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Projede Git kullanıcı adı ve e-postası nasıl değiştirilir?
 subtitle: >-
   Git'e projemizi atarken mevcut adımızı değiştirmek istersek config ayarlarını
