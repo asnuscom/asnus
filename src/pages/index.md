@@ -7,8 +7,11 @@ sections:
     title: Asnus Blog'a Hoşgeldiniz!
     content: ''
   - section_id: about
-    type: section_content
-
+    type: section_content  
+  - section_id: featured-posts
+    type: featured_posts
+    title: Editörün Seçimi
+    posts_number: 2
   - section_id: recent-posts
     type: section_posts
     title: Son Gönderiler
