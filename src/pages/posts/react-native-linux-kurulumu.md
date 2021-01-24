@@ -13,6 +13,7 @@ excerpt: >-
   istiyorum.
 canonical_url: ''
 author: sametsunman
+featured: true
 template: post
 thumb_img_path: images/react-native.png
 content_img_path: images/react-native.png
