@@ -20,14 +20,15 @@ Merhaba arkadaşlar,
 
 Öncelikle Excel dosyamızı açalım. Geliştirici sekmesini aktif edelim.
 
-*   Geliştirici sekmesini aktif etmek için;
+Geliştirici sekmesini aktif etmek için;
 
-    Dosya sekmesine tıklıyoruz aşağıda yer alan seçeneklere tıklayıp sol taraftaki şeridi özelleştir bölümünden geliştirici kutucuğunu aktif edip tamama tıklıyoruz. Geliştirici sekmemiz aktif oldu  :)
+Dosya sekmesine tıklıyoruz aşağıda yer alan seçeneklere tıklayıp sol taraftaki şeridi özelleştir bölümünden geliştirici kutucuğunu aktif edip tamama tıklıyoruz. Geliştirici sekmemiz aktif oldu  :)
 
 Şimdi geliştirici sekmesinden Visual Basic e tıklayalım. Açılan pencerede Insert kısmından yeni Module ekleyelim. Sonrasında ise açılan pencereye aşağıdaki kodları yapıştıralım.
+
 ```
 
- Sub OtoKaydetme()
+Sub OtoKaydetme()
 
 Dim wb As Workbook
 Dim durtime As Integer
@@ -58,14 +59,15 @@ End Sub
 
 ```
 
-*   Şimdi ise soldan BuÇalışmaKitabı dosyasını açıyoruz ve üstteki General yazan açılır menüden Workbook u seçelim ve alttaki kodu yapıştıralım.
+Şimdi ise soldan BuÇalışmaKitabı dosyasını açıyoruz ve üstteki General yazan açılır menüden Workbook u seçelim ve alttaki kodu yapıştıralım.
 
+```
 Private Sub Workbook_Open()
 
 Call OtoKaydetmeModule.OtoKaydetme
 
 End Sub
-
+```
 
 
 Böylece yapmış olduğumuz Module ü 5 sn de bir çağıracak ve sayfamız otomatik kaydolacak.
