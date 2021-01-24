@@ -4,7 +4,10 @@ subtitle: ''
 date: '2021-01-24'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
-excerpt: lorem-ipsum
+excerpt: >-
+  Merhaba arkadaşlar, İş yerimde elektrik kesintisinden dolayı önemli bilgiler
+  kayboluyordu, buna çözüm üretmek adına çalışma kitabını otomatik kaydetmeyi
+  öğrendim ve uyguladım, Bunu sizlerle paylaşmak istedim umarım yararlı olur.
 canonical_url: lorem-ipsum
 author: sulesavas
 template: post
