@@ -11,7 +11,7 @@ excerpt: >-
   Merhaba arkadaşlar, Linux işletim sistemleri üzerinde bir React Native
   uygulaması nasıl geliştirmek için gerekli yazılımların kurulumlarını anlatmak
   istiyorum.
-canonical_url: lorem-ipsum
+canonical_url: ''
 author: sametsunman
 template: post
 thumb_img_path: images/react-native.png
