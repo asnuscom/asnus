@@ -10,7 +10,7 @@ export default class SectionHero extends React.Component {
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-hero">
               {_.get(section, 'title', null) && (
-              <h1 className="block-title inner-sm">{_.get(section, 'title', null)}</h1>
+              <h2 className="block-title inner-sm">{_.get(section, 'title', null)}</h2>
               )}
               {_.get(section, 'content', null) && (
               <div className="block-content inner-sm">

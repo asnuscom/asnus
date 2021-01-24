@@ -51,7 +51,7 @@ export default class Blog extends React.Component {
                       )}
                       <footer className="post-meta">
                         <time className="published"
-                          dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%B %d, %Y')}</time>
+                          dateTime={moment(_.get(post, 'frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(post, 'frontmatter.date', null)).strftime('%d %B %Y')}</time>
                       </footer>
                     </div>
                   </article>
