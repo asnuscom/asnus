@@ -4,7 +4,7 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: Asnus Blog'a Hoşgeldininiz!
+    title: Asnus Blog'a Hoşgeldiniz!
     content: ''
   - section_id: about
     type: section_content
