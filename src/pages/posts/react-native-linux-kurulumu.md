@@ -14,6 +14,7 @@ excerpt: >-
 canonical_url: lorem-ipsum
 author: sametsunman
 template: post
+thumb_img_path: images/react-native.png
 ---
 ## Lorem ipsum
 
