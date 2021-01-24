@@ -2,7 +2,7 @@
 title: Excelde çalışma kitabını otomatik kaydetme
 subtitle: ''
 date: '2021-01-24'
-thumb_img_alt: lorem-ipsum
+thumb_img_alt: Excel-
 content_img_alt: lorem-ipsum
 excerpt: >-
   Merhaba arkadaşlar, İş yerimde elektrik kesintisinden dolayı önemli bilgiler
