@@ -5,7 +5,6 @@
 ## For Live Site
 [http://www.asnus.com](http://asnus.com)
 
-This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
 
 ## Develop Locally
 
@@ -26,5 +25,7 @@ This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wi
 
 
 ## Colophon
+
+This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
 
 Generated at `2021-01-08T11:07:17.888Z` by Stackbit version `0.3.42`.
