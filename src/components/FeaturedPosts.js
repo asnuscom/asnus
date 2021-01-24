@@ -8,7 +8,7 @@ import CtaButtons from './CtaButtons';
 export default class FeaturedPosts extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
-        let display_posts = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'),function(x){return x.frontmatter.featured===true}),  'frontmatter.date', 'desc');
+        let display_posts = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'),function(x){return x.frontmatter.featured}),  'frontmatter.date', 'desc');
         let featured_posts = display_posts.slice(0, _.get(section, 'posts_number', null));
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-posts">
@@ -26,6 +26,11 @@ export default class FeaturedPosts extends React.Component {
                       <header className="post-header">
                         <h3 className="post-title"><Link to={withPrefix(_.get(post, 'url', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h3>
                       </header>
+                      {_.get(post, 'frontmatter.author', null) && (
+                      <div className="authorName">       
+                        <p><a href={withPrefix(_.get(post, 'frontmatter.author', null))}>{_.get(post, 'frontmatter.author', null).toUpperCase()}</a></p>
+                      </div>
+                      )}
                       {_.get(post, 'frontmatter.excerpt', null) && (
                       <div className="post-content">
                         <p>{_.get(post, 'frontmatter.excerpt', null)}</p>

@@ -18,7 +18,7 @@ sections:
     posts_number: 6
     actions:
       - label: Tüm Gönderiler
-        url: blog/index.html
+        url: blog/
         style: button
 template: advanced
 ---

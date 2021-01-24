@@ -1,6 +1,5 @@
 ---
 author: sametsunman
-featured: true
 title: Apache Maven Windows'a nasıl yüklenir?
 subtitle: >-
   Maven bir proje yönetim aracıdır. Gelişiricilere projenin tüm yaşam döngüsüne
