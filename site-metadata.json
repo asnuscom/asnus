@@ -64,7 +64,8 @@
         ]
     },
     "footer": {
-        "content": "©2021 ASNUS. ALL RIGHT ARE RESERVED"
+        "content": "©2021 ASNUS. ALL RIGHT ARE RESERVED",
+        "links": []
     },
     "title": "ASNUS",
     "favicon": "images/favicon.ico"
