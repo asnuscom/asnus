@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Regex ile Türkçe Karakter Denetimi
 subtitle: lorem-ipsum
 date: '2021-01-13'

@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: JavaScript ile Harflerden Avatar Resmi Oluşturma
 subtitle: ''
 date: '2019-11-03'

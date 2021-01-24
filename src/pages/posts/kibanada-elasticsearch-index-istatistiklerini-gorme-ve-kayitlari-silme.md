@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Kibana'da ElasticSearch index istatistiklerini görme ve kayıtları silme
 subtitle: >-
   Kibana üzerinden elastic search verilerini silmek ve veri istatistiklerini

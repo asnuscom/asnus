@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Bilgisayarınızdaki  ses kablosuz olarak telefonanasıl iletilir?
 subtitle: >-
   Bilgisayarımızda hoparlör ya da kulaklık olmayabilir. Hatta ses sürücüsü dahi

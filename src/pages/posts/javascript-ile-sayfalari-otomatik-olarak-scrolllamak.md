@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Javascript ile sayfaları otomatik olarak scroll'lamak
 subtitle: >-
   Twitter, facebook gibi akış sayfaları yüklemek için farenizin tekerini

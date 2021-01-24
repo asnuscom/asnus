@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Windows'ta "Windows Orijinal Değil" Yazısı Nasıl Kaldırılır?
 subtitle: >-
   Windows'umuz orijinal lisansına sahip olmadığımız taktirde, sağ alt köşede

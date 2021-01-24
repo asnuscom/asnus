@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: .NET Core 3'te Coravel kullanarak arkaplanda çalışan job oluşturma
 subtitle: >-
   Net Core'u bilmeyen yoktur, günümüzde  yaygın kullanılan bir framework.

@@ -1,4 +1,5 @@
 ---
+author: sametsunman
 title: Production Mod'da React Sayfa Yenilerken 404 Not Found Sorunu
 subtitle: >-
   React uygulamanızı development mod'da çalıştırırken sorun yok ancak production
