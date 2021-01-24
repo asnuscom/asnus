@@ -4,7 +4,7 @@ subtitle: >-
   Merhaba arkadaşlar, Linux işletim sistemleri üzerinde bir React Native
   uygulaması nasıl geliştirmek için gerekli yazılımların kurulumlarını anlatmak
   istiyorum.
-date: '2021-01-24'
+date: '2020-12-26'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: >-
