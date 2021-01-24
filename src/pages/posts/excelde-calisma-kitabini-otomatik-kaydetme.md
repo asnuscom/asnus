@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: Excelde çalışma kitabını otomatik kaydetme
 subtitle: lorem-ipsum
 date: '2021-01-24'
 thumb_img_alt: lorem-ipsum
