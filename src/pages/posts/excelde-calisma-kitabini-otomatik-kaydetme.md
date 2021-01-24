@@ -12,6 +12,7 @@ canonical_url: lorem-ipsum
 author: sulesavas
 template: post
 thumb_img_path: images/Excel-oto.png
+content_img_path: images/Excel-oto.png
 ---
 Merhaba arkadaşlar,
 
