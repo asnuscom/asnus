@@ -1,6 +1,9 @@
-# ✨ asnus ✨
+# ✨ Asnus Blog ✨
 
 <img src="https://raw.githubusercontent.com/asnuscom/asnus/master/static/images/ScreenShot.png" width="800">
+
+## For Live Site
+[http://www.asnus.com](http://asnus.com)
 
 This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
 
@@ -11,7 +14,6 @@ This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wi
 1. Install npm dependencies:
 
         npm install
-
 
 
 1. Start the Gatsby local development server:
