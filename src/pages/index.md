@@ -4,10 +4,10 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: Asnus Blog'a Hoşgeldiniz!
+    title: Asnus Blog'a Hoşgeldnjiniz!
     content: ''
   - section_id: about
-    type: section_content  
+    type: section_content
   - section_id: featured-posts
     type: featured_posts
     title: Editörün Seçimi
