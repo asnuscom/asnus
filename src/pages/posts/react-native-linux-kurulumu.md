@@ -5,7 +5,7 @@ subtitle: >-
   uygulaması nasıl geliştirmek için gerekli yazılımların kurulumlarını anlatmak
   istiyorum.
 date: '2020-12-26'
-thumb_img_alt: lorem-ipsum
+thumb_img_alt: react-native
 content_img_alt: lorem-ipsum
 excerpt: >-
   Merhaba arkadaşlar, Linux işletim sistemleri üzerinde bir React Native
