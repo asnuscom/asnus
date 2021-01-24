@@ -9,9 +9,28 @@ canonical_url: lorem-ipsum
 author: sulesavas
 template: post
 ---
-## Lorem ipsum
+Merhaba arkadaşlar,
 
-Lorem ipsum dolor sit amet, **consectetur adipiscing elit**, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+İş yerimde elektrik kesintisinden dolayı önemli bilgiler kayboluyordu, buna çözüm üretmek adına çalışma kitabını otomatik kaydetmeyi öğrendim ve uyguladım, Bunu sizlerle paylaşmak istedim umarım yararlı olur.
 
-- Lorem ipsum
-- dolor sit amet
+
+
+
+
+Öncelikle Excel dosyamızı açalım. Geliştirici sekmesini aktif edelim.
+
+*    Geliştirici sekmesini aktif etmek için;
+
+      Dosya sekmesine tıklıyoruz aşağıda yer alan seçeneklere tıklayıp sol taraftaki şeridi özelleştir bölümünden geliştirici kutucuğunu aktif edip tamama tıklıyoruz. Geliştirici sekmemiz aktif oldu  :)
+
+
+
+Şimdi geliştirici sekmesinden Visual Basic e tıklayalım. Açılan pencerede Insert kısmından yeni Module ekleyelim. Sonrasında ise açılan pencereye aşağıdaki kodları yapıştıralım.
+
+
+
+
+
+
+
+ İyi çalışmalar...
