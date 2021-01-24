@@ -1,5 +1,5 @@
 ---
-title: lorem-ipsum
+title: React Native Linux Kurulumu
 subtitle: lorem-ipsum
 date: '2021-01-24'
 thumb_img_alt: lorem-ipsum
