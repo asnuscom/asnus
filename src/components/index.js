@@ -6,6 +6,8 @@ import SectionContent from './SectionContent';
 import SectionForm from './SectionForm';
 import SectionHero from './SectionHero';
 import SectionPosts from './SectionPosts';
+import FeaturedPosts from './FeaturedPosts';
+
 import Layout from './Layout';
 
 export {
@@ -17,6 +19,7 @@ export {
     SectionForm,
     SectionHero,
     SectionPosts,
+    FeaturedPosts,
     Layout
 };
 
@@ -29,5 +32,6 @@ export default {
     SectionForm,
     SectionHero,
     SectionPosts,
+    FeaturedPosts,
     Layout
 };

@@ -1,5 +1,6 @@
 ---
 author: sametsunman
+featured: true
 title: .NET Core Projesi Ubuntu Nginx Sunucu Üzerinde Nasıl Yayınlanır?
 subtitle: ''
 date: '2019-09-23'

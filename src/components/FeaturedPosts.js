@@ -5,11 +5,11 @@ import moment from 'moment-strftime';
 import {getPages, Link, withPrefix} from '../utils';
 import CtaButtons from './CtaButtons';
 
-export default class SectionPosts extends React.Component {
+export default class FeaturedPosts extends React.Component {
     render() {
         let section = _.get(this.props, 'section', null);
-        let display_posts = _.orderBy(getPages(this.props.pageContext.pages, '/posts'), 'frontmatter.date', 'desc');
-        let recent_posts = display_posts.slice(0, _.get(section, 'posts_number', null));
+        let display_posts = _.orderBy(_.filter(getPages(this.props.pageContext.pages, '/posts'),function(x){return x.frontmatter.featured}),  'frontmatter.date', 'desc');
+        let featured_posts = display_posts.slice(0, _.get(section, 'posts_number', null));
         return (
             <section id={_.get(section, 'section_id', null)} className="block block-posts">
               {_.get(section, 'title', null) && (
@@ -17,7 +17,7 @@ export default class SectionPosts extends React.Component {
               )}
               <div className="post-feed">
                 <div className="post-feed-inside">
-                  {_.map(recent_posts, (post, post_idx) => (
+                  {_.map(featured_posts, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
                       {_.get(post, 'frontmatter.thumb_img_path', null) && (
