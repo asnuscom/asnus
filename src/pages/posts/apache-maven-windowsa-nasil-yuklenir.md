@@ -11,14 +11,9 @@ date: '2019-12-22'
 thumb_img_alt: apache-maven
 content_img_alt: apache-maven
 excerpt: >-
-  Maven bir proje yönetim aracıdır. Gelişiricilere projenin tüm yaşam döngüsüne
-  müdahale edebileceği bir yapı sağlar. Proje kurulumu ve yeniden
-  kullanılabilirliği kolaylaştırır. Geliştirme sürecini basitleştirir ve bu
-  süreci standart hale getirir. Bunlara ek olarak proje bağımlılıklarını
-  yönetmesi de Maven’ın en önemli özelliklerinden birisidir.
 canonical_url: ''
 template: post
-thumb_img_path: images/apache-maven.jpg
+thumb_img_path: 
 content_img_path: images/apache-maven.jpg
 ---
 Apache Maven'in resmi sitesinde kurulumu biraz kafa karıştırıcı bulunabilir. Bu yüzden türkçe yönerge iyi olacağını düşündüm.

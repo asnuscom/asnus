@@ -8,9 +8,6 @@ date: '2020-12-26'
 thumb_img_alt: react-native
 content_img_alt: react-native
 excerpt: >-
-  Merhaba arkadaşlar, Linux işletim sistemleri üzerinde bir React Native
-  uygulaması nasıl geliştirmek için gerekli yazılımların kurulumlarını anlatmak
-  istiyorum.
 canonical_url: ''
 author: sametsunman
 featured: true

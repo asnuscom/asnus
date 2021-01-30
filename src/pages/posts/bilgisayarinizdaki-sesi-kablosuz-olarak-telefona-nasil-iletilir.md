@@ -11,11 +11,6 @@ date: '2019-12-26'
 thumb_img_alt: soundwire
 content_img_alt: soundwire
 excerpt: >-
-  Bilgisayarımızda hoparlör ya da kulaklık olmayabilir. Hatta ses sürücüsü dahi
-  olmayabilir. Daha önce işyerimdeki bilgisayarımın hoparlörü olmadığını
-  farkettim ve de bir video izlemem gerekiyordu. İnternette biraz araştırma
-  yaptım. Farkettim ki bu durumda bilgisayardaki sesi telefondan dinleyebiliriz.
-  Nasıl mı? Hadi bakalım..
 canonical_url: ''
 template: post
 thumb_img_path: images/soundwire.jpg

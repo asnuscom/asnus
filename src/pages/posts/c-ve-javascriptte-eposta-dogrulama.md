@@ -8,8 +8,7 @@ date: '2020-04-21'
 thumb_img_alt: email-validation
 content_img_alt: email-validation
 excerpt: >-
-  Bir metnin e-posta olup olmadığını doğrulamak isteyebilir. Bunu iki farklı
-  dilde nasıl yapabileceğimizi gösterelim
+
 canonical_url: ''
 template: post
 thumb_img_path: images/email-validation.png
