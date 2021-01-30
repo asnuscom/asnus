@@ -6,7 +6,7 @@ thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
 excerpt: lorem-ipsum
 canonical_url: lorem-ipsum
-author: lorem-ipsum
+author: ihsansunman
 template: post
 ---
 ## Lorem ipsum
