@@ -1,5 +1,5 @@
 ---
-title: VS Code'da vs-code'da-github-deposuna-proje-aktarmak
+title: VS Code'da github-deposuna-proje-aktarmak
 subtitle: lorem-ipsum
 date: '2021-01-30'
 thumb_img_alt: lorem-ipsum
