@@ -4,7 +4,11 @@ subtitle: ''
 date: '2021-01-30'
 thumb_img_alt: ''
 content_img_alt: ''
-excerpt: lorem-ipsum
+excerpt: >-
+  Merhaba arkadaşlar, günümüzde birçok proje VS Code ile yazılmakta. Ve bu
+  projeleri GitHub depolarında saklıyoruz. Peki yeni başlayanlar için bu
+  bağlantıyı nasıl sağlayacağız ve güncellemeleri nasıl yapacağız bunu
+  öğreneceğiz.
 canonical_url: ''
 author: ihsansunman
 template: post
