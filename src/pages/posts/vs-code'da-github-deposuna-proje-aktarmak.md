@@ -24,7 +24,7 @@ content_img_path: images/git0.png
 ![](https://raw.githubusercontent.com/asnuscom/asnus/master/static/images/git1.png)
 
 
-Daha sonrasında yeni bir terminal başlatmak adına yukarıdaki menüden  Terminal > New Terminal tuşlamalarını yaparak terminalimizi başlatalım.  Açılan terminale daha öncesinde de \[şu konuda]\(https://asnus.com/posts/projede-git-kullanici-adi-ve-epostasi-nasil-degistirilir/) bahsettiğimiz gibi GitHub kullanıcı adı ve mail adreslerimizi ayarlıyalım.
+Daha sonrasında yeni bir terminal başlatmak adına yukarıdaki menüden  Terminal > New Terminal tuşlamalarını yaparak terminalimizi başlatalım.  Açılan terminale daha öncesinde de [şu konuda](https://asnus.com/posts/projede-git-kullanici-adi-ve-epostasi-nasil-degistirilir/) bahsettiğimiz gibi GitHub kullanıcı adı ve mail adreslerimizi ayarlıyalım.
 
 ```
 
