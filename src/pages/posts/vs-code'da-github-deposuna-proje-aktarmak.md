@@ -1,6 +1,6 @@
 ---
 title: VS Code'da Github deposuna Proje Aktarmak
-subtitle: lorem-ipsum
+subtitle: ''
 date: '2021-01-30'
 thumb_img_alt: lorem-ipsum
 content_img_alt: lorem-ipsum
