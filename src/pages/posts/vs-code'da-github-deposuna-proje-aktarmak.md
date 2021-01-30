@@ -8,6 +8,7 @@ excerpt: lorem-ipsum
 canonical_url: lorem-ipsum
 author: ihsansunman
 template: post
+thumb_img_path: images/git0.png
 ---
 ## Lorem ipsum
 
