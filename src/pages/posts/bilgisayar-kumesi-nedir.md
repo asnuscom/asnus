@@ -1,7 +1,12 @@
 ---
 author: ihsansunman
 title: Bilgisayar Kümesi Nedir?
-subtitle: ihsansunman
+subtitle: >-
+  Günümüzde birçok işlemimizi bilgisayar vasıtasıyla yapıyoruz. Bazen bilgisayar
+  ile yapılan işlemler bilgisayarımızı zorlamaya başlar. Bunun için insanlar
+  birçok yöntem geliştirmiştir. Bilgisayarımızın donanımını artırmakta işe
+  yarayabilir ancak günümüzde tek bir bilgisayarın yapamayacağı işlemler yapmak
+  zorunda kalıyoruz. 
 date: '2019-12-14'
 thumb_img_alt: ''
 content_img_alt: ''
