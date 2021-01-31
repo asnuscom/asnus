@@ -1,7 +1,10 @@
 ---
 author: ihsansunman
 title: Linux'ta Initramfs Hatası Nasıl Düzeltilir?
-subtitle: ihsansunman
+subtitle: >-
+  Bu hata genelde disk üzerinde bir sorunla karşılaşıldığında bu hatayı
+  ekranımızda görürüz. Sistem işlem anında kapandığında veya diskinizde bad
+  sector gibi ciddi bir sorun oluştuğunda bu hatayı alırız.
 date: '2019-12-19'
 thumb_img_alt: ''
 content_img_alt: ''
