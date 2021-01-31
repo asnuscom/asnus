@@ -1,7 +1,10 @@
 ---
 author: sametsunman
 title: JavaScript ile Harflerden Avatar Resmi Oluşturma
-subtitle: ''
+subtitle: >-
+  Kullanıcıların profil resmi olmadığında insan silüeti göstermek yerine isminin
+  baş harflerinden bir resim oluşturabiliriz. Böylece her kullanıcının kendine
+  özgü profil resmi olacak. Hadi Javascript ile nasıl yapıldığına bakalım.
 date: '2019-11-03'
 thumb_img_alt: canvas-avatar
 content_img_alt: canvas-avatar
