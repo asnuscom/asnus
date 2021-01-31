@@ -1,7 +1,14 @@
 ---
 author: ihsansunman
 title: DevOps Nedir?
-subtitle: ihsansunman
+subtitle: >-
+  Birçok şirkette birden fazla departman bulunmaktadır. Bunlardan biri olan
+  Bilgi Teknolojileri (IT) departmanının altında yazılımın geliştirilmesinden
+  sorumlu takım “Geliştiriciler” ve bu yazılımların işletilmesinden sorumlu
+  takım olan “Operasyon” birimleri bulunmaktadır. DevOps ise bu iki birimin
+  ingilizceleri olan developers ve operations’un ilk üç harflerinden oluşur. Bu
+  kavram iki birimin en etkili iletişim ile daha verimli olabilmeleri için bir
+  arada çalışmasını belirtir.
 date: '2019-11-26'
 thumb_img_alt: ''
 content_img_alt: ''
