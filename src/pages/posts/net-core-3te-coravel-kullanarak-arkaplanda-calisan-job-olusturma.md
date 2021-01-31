@@ -10,6 +10,10 @@ date: '2020-03-09'
 thumb_img_alt: coravel
 content_img_alt: ''
 excerpt: >-
+  Net Core'u bilmeyen yoktur, günümüzde  yaygın kullanılan bir framework.
+  Platformlar arası, mimariler arasında tutarlı, komut satırı araçları, esnek
+  dağıtım, uyumlu, açık kaynak gibi özelliklere sahip olması ve Microsoft
+  tarafından desteklenmesi ön plana çıkıyor.
 canonical_url: ''
 template: post
 thumb_img_path: images/coravel.png

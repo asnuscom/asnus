@@ -1,11 +1,11 @@
 ---
 author: sametsunman
 title: Regex ile Türkçe Karakter Denetimi
-subtitle: 
+subtitle: lorem-ipsum
 date: '2021-01-13'
 thumb_img_alt: regex
 content_img_alt: regex
-excerpt: 
+excerpt: lorem-ipsum
 canonical_url: ''
 template: post
 thumb_img_path: images/regex.png

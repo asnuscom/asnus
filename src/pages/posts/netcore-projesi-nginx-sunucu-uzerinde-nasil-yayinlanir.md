@@ -2,17 +2,18 @@
 author: sametsunman
 featured: true
 title: .NET Core Projesi Ubuntu Nginx Sunucu Üzerinde Nasıl Yayınlanır?
-subtitle: 
-Merhaba arkadaşlar. Bu yazımda başlıktan da anlaşıldığı gibi Asp.Net ile kodladığımız bir projeyi web ortamında yayınlayıp kullanılabilir hale getirme konusuna değineceğim. Bildiğiniz gibi web uygulamalarını tamamladığımız\_ zaman internet ortamına o haliyle yükleyemeyiz. Web ortamında çalışabilecek hale getirmek için projelerimizi publish etmemiz gerekir. Hadi nasıl yapıldığına bakalım.
+subtitle: ''
 date: '2019-09-23'
 thumb_img_alt: netcore-linux-nginx
 content_img_alt: netcore-linux-nginx
-excerpt: >-
+excerpt: "Merhaba arkadaşlar. Bu yazımda başlıktan da anlaşıldığı gibi Asp.Net ile kodladığımız bir projeyi web ortamında yayınlayıp kullanılabilir hale getirme konusuna değineceğim. Bildiğiniz gibi web uygulamalarını tamamladığımız\_ zaman internet ortamına o haliyle yükleyemeyiz. Web ortamında çalışabilecek hale getirmek için projelerimizi publish etmemiz gerekir. Hadi nasıl yapıldığına bakalım."
 canonical_url: denmeee
 template: post
 thumb_img_path: images/cover.svg
 content_img_path: images/cover.svg
 ---
+Merhaba arkadaşlar. Bu yazımda başlıktan da anlaşıldığı gibi Asp.Net ile kodladığımız bir projeyi web ortamında yayınlayıp kullanılabilir hale getirme konusuna değineceğim. Bildiğiniz gibi web uygulamalarını tamamladığımız  zaman internet ortamına o haliyle yükleyemeyiz. Web ortamında çalışabilecek hale getirmek için projelerimizi publish etmemiz gerekir. Hadi nasıl yapıldığına bakalım.
+
 İlk önce terminal üzerinden .NET Core sdk'sını ve runtime'ını kuralım:
 
 ```

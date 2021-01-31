@@ -1,16 +1,17 @@
 ---
 author: ihsansunman
 title: Bilgisayar Kümesi Nedir?
-subtitle: >-
-  Günümüzde birçok işlemimizi bilgisayar vasıtasıyla yapıyoruz. Bazen bilgisayar
-  ile yapılan işlemler bilgisayarımızı zorlamaya başlar. Bunun için insanlar
-  birçok yöntem geliştirmiştir. Bilgisayarımızın donanımını artırmakta işe
-  yarayabilir ancak günümüzde tek bir bilgisayarın yapamayacağı işlemler yapmak
-  zorunda kalıyoruz.
+subtitle: ihsansunman
 date: '2019-12-14'
 thumb_img_alt: ''
 content_img_alt: ''
 excerpt: >-
+  Günümüzde birçok işlemimizi bilgisayar vasıtasıyla yapıyoruz. Bazen bilgisayar
+  ile yapılan işlemler bilgisayarımızı zorlamaya başlar. Bunun için insanlar
+  birçok yöntem geliştirmiştir. Bilgisayarımızın donanımını artırmakta işe
+  yarayabilir ancak günümüzde tek bir bilgisayarın yapamayacağı işlemler yapmak
+  zorunda kalıyoruz. Bunun için birçok bilgisayarda işlem yapmamız
+  gerekmektedir.
 canonical_url: ''
 template: post
 content_img_path: images/computerclus.jpg
@@ -18,7 +19,7 @@ thumb_img_path: images/computerclus.jpg
 ---
 ## Bilgisayar Kümesi (Computer Cluster)
 
-Bunun için birçok bilgisayarda işlem yapmamız gerekmektedir. Günümüzde bu bilgisayarları ağ bağlantısı ile bir araya getirip sanki bir bilgisayarmış gibi davranmalarına yarayan sistemler geliştirilmiştir. Bu sisteme bilgisayar kümesi yani computer cluster denilir. 
+Günümüzde birçok işlemimizi bilgisayar vasıtasıyla yapıyoruz. Bazen bilgisayar ile yapılan işlemler bilgisayarımızı zorlamaya başlar. Bunun için insanlar birçok yöntem geliştirmiştir. Bilgisayarımızın donanımını artırmakta işe yarayabilir ancak günümüzde tek bir bilgisayarın yapamayacağı işlemler yapmak zorunda kalıyoruz. Bunun için birçok bilgisayarda işlem yapmamız gerekmektedir. Günümüzde bu bilgisayarları ağ bağlantısı ile bir araya getirip sanki bir bilgisayarmış gibi davranmalarına yarayan sistemler geliştirilmiştir. Bu sisteme bilgisayar kümesi yani computer cluster denilir. 
 
    Kişisel bilgisayarlarımız ile bir bilgisayar kümesi oluşturmak mümkün ancak günümüzde küme oluşturmak için özel üretilen kartlar mevcuttur. Hatta Raspberry adı verilen mini board PC’ler ile küme oluşturulması son zamanda oldukça artmıştır. 
 

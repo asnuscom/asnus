@@ -9,6 +9,9 @@ date: '2020-11-26'
 thumb_img_alt: web-dav
 content_img_alt: web-dav
 excerpt: >-
+  Üzerinde çalıştığımız bir projede yerel makinede sorun yokken iis üzerinde
+  GET,POST gibi isteklerde sorun olmazken önyüzde(React, Axios) PUT ve DELETE
+  için cors hatası alıyorduk. 
 canonical_url: ''
 template: post
 thumb_img_path: images/webDav.png

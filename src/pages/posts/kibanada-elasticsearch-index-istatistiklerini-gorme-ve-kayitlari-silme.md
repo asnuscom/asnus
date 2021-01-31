@@ -8,6 +8,8 @@ date: '2020-08-24'
 thumb_img_alt: kibana
 content_img_alt: kibana
 excerpt: >-
+  Kibana'daki bir index'e ait bilgileri görmek istiyorsak aşağıdaki komutu Dev
+  Tools sekmesinden konsola yazabiliriz.
 canonical_url: ''
 template: post
 thumb_img_path: images/kibana.png

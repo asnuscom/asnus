@@ -1,19 +1,23 @@
 ---
 author: ihsansunman
 title: Linux'ta Initramfs Hatası Nasıl Düzeltilir?
-subtitle: 
-  Bu hata genelde disk üzerinde bir sorunla karşılaşıldığında bu hatayı
-  ekranımızda görürüz. Sistem işlem anında kapandığında veya diskinizde bad
-  sector gibi ciddi bir sorun oluştuğunda bu hatayı alırız. 
+subtitle: ihsansunman
 date: '2019-12-19'
 thumb_img_alt: ''
 content_img_alt: ''
 excerpt: >-
+  Bu hata genelde disk üzerinde bir sorunla karşılaşıldığında bu hatayı
+  ekranımızda görürüz. Sistem işlem anında kapandığında veya diskinizde bad
+  sector gibi ciddi bir sorun oluştuğunda bu hatayı alırız. 
 canonical_url: ''
 template: post
 thumb_img_path: images/initramfs.jpg
 content_img_path: images/initramfs.jpg
 ---
+## Initramfs Hatası Nedir? 
+
+  Bu hata genelde disk üzerinde bir sorunla karşılaşıldığında bu hatayı ekranımızda görürüz. Sistem işlem anında kapandığında veya diskinizde bad sector gibi ciddi bir sorun oluştuğunda bu hatayı alırız. 
+
 ## Initramfs Hatası Çözümü 
 
 Öncelikle yanımızda Linux kurulum USB’si veya CD’si olması lazım çünkü sağlam çalışan bir linux gerekiyor. Linux’u USB üzerinden başlatalım. Daha sonrasında Uç Birimi açalım.  

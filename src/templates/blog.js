@@ -31,9 +31,9 @@ export default class Blog extends React.Component {
                   {_.map(display_posts, (post, post_idx) => (
                   <article key={post_idx} className="post post-card">
                     <div className="post-inside">
-                      {_.get(post, 'frontmatter.content_img_path', null) && (
+                      {_.get(post, 'frontmatter.thumb_img_path', null) && (
                       <Link className="post-thumbnail" to={withPrefix(_.get(post, 'url', null))}>
-                        <img src={withPrefix(_.get(post, 'frontmatter.content_img_path', null))} alt={_.get(post, 'frontmatter.content_img_alt', null)} />
+                        <img src={withPrefix(_.get(post, 'frontmatter.thumb_img_path', null))} alt={_.get(post, 'frontmatter.thumb_img_alt', null)} />
                       </Link>
                       )}
                       <header className="post-header">
@@ -44,9 +44,9 @@ export default class Blog extends React.Component {
                         <p><a href={withPrefix(_.get(post, 'frontmatter.author', null))}>{_.get(post, 'frontmatter.author', null).toUpperCase()}</a></p>
                       </div>
                       )}
-                      {_.get(post, 'frontmatter.subtitle', null) && (
+                      {_.get(post, 'frontmatter.excerpt', null) && (
                       <div className="post-content">
-                        <p>{_.get(post, 'frontmatter.subtitle', null)}</p>
+                        <p>{_.get(post, 'frontmatter.excerpt', null)}</p>
                       </div>
                       )}
                       <footer className="post-meta">
