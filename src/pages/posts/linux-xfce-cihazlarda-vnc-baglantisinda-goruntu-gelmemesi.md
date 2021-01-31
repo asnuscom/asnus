@@ -1,7 +1,13 @@
 ---
 author: ihsansunman
 title: Linux-XFCE Cihazlarda VNC Bağlantısında Görüntü Gelmemesi
-subtitle: ihsansunman
+subtitle: >-
+  Linux cihazıma TightVNC Server kurdum ancak VNC ile bağlanmaya çalıştığımda
+  gri bir ekran karşıladı beni. Aslında böyle bir ekran bizi karşıladığında
+  sorunsuzca bağlandık demektir. Ancak bağlantı ekranımızda gerekli bileşenleri
+  cihazımız otomatik açmadığını anlarız. Bunu da küçük bir düzenleme ile bu
+  sorunu düzeltebiliriz. Ancak cihazımız XFCE arayüzünde ise bu işlem
+  çalışabilir. Diğer arayüzlerde uyarlama yaparak da çözebilirsiniz.
 date: '2020-04-09'
 thumb_img_alt: VNC
 content_img_alt: VNC
