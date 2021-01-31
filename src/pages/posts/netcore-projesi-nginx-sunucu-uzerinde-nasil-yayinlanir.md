@@ -7,7 +7,7 @@ Merhaba arkadaşlar. Bu yazımda başlıktan da anlaşıldığı gibi Asp.Net il
 date: '2019-09-23'
 thumb_img_alt: netcore-linux-nginx
 content_img_alt: netcore-linux-nginx
-excerpt: 
+excerpt: >-
 canonical_url: denmeee
 template: post
 thumb_img_path: images/cover.svg
