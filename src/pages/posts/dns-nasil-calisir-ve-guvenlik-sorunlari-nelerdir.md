@@ -1,7 +1,10 @@
 ---
 author: ihsansunman
 title: DNS Nasıl Çalışır ve Güvenlik sorunları nelerdir?
-subtitle: ihsansunman
+subtitle: >-
+  DNS, Domain Name System kelimelerinin kısaltılmış halidir. Türkçe karşılığı
+  Alan İsimlendirme Sistemi’dir. İnternetimizin adres defterine benzetebiliriz.
+  İnternette gezinmemiz için gerekli olan adresleri tutan bir sistemdir.
 date: '2019-12-15'
 thumb_img_alt: ''
 content_img_alt: ''
