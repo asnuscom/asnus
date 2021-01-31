@@ -14,10 +14,6 @@ template: post
 thumb_img_path: images/Excel-oto.png
 content_img_path: images/Excel-oto.png
 ---
-Merhaba arkadaşlar,
-
-İş yerimde elektrik kesintisinden dolayı önemli bilgiler kayboluyordu, buna çözüm üretmek adına çalışma kitabını otomatik kaydetmeyi öğrendim ve uyguladım, Bunu sizlerle paylaşmak istedim umarım yararlı olur.
-
 Öncelikle Excel dosyamızı açalım. Geliştirici sekmesini aktif edelim.
 
 Geliştirici sekmesini aktif etmek için;
@@ -61,21 +57,12 @@ End Sub
 
 Şimdi ise soldan BuÇalışmaKitabı dosyasını açıyoruz ve üstteki General yazan açılır menüden Workbook u seçelim ve alttaki kodu yapıştıralım.
 
-```
-Private Sub Workbook_Open()
+    Private Sub Workbook_Open()
 
-Call OtoKaydetmeModule.OtoKaydetme
+    Call OtoKaydetmeModule.OtoKaydetme
 
-End Sub
-```
-
+    End Sub
 
 Böylece yapmış olduğumuz Module ü 5 sn de bir çağıracak ve sayfamız otomatik kaydolacak.
-
-
-
-
-
-
 
 İyi çalışmalar...
