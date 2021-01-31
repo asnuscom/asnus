@@ -1,7 +1,13 @@
 ---
 author: ihsansunman
 title: Windows 10'da Komuttan Kablosuz Bağlantı Paylaşma
-subtitle: ihsansunman
+subtitle: >-
+  Merhaba arkadaşlar bazen ethernetten (kablolu bağlantı) bazen ise wi-fi
+  (kablosuz bağlantı) ile gelen internetin bilgisayar aracılığı ile tekrar
+  kablosuz bir şekilde paylaşmamız gerekir. Yeni bilgisayarlarda "Mobil Etkin
+  Nokta" sekmesi ile paylaşım sağlayabiliyoruz. Ancak eski sürüm Windows 10 ve
+  eski bilgisayarlarımızda bu sekme çıkmıyor. Bundan dolayı Komut İstemcisinden
+  kablosuz bağlantı paylaşmayı görelim:
 date: '2020-04-12'
 thumb_img_alt: ''
 content_img_alt: ''
