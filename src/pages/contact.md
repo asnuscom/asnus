@@ -4,12 +4,12 @@ hide_title: false
 sections:
   - section_id: contact-form
     type: section_form
-    content: To get in touch please fill the form below.
+    content: Aşağıdaki formu eksiksiz doldurarak bizimle iletişime geçebilirsiniz.
     form_id: contactForm
-    form_action: /thank-you
+    form_action: https://mailthis.to/destek@asnus.com
     form_fields:
       - input_type: text
-        name: name
+        name: isim
         label: İsim
         default_value: İsminiz
         is_required: true
@@ -19,7 +19,7 @@ sections:
         default_value: E-mail adresiniz
         is_required: true
       - input_type: select
-        name: subject
+        name: konu
         label: Konu
         default_value: Konunuz
         options:
@@ -27,14 +27,14 @@ sections:
           - Sponsorluk
           - Diğer
       - input_type: textarea
-        name: message
+        name: mesaj
         label: Mesaj
         default_value: Mesajınız
       - input_type: checkbox
-        name: consent
+        name: onay
         label: >-
           Bu formun, benimle iletişime geçilebilmesi için gönderilen bilgilerimi
-          sakladığını anlıyorum.
+          sakladığını biliyor ve onaylıyorum.
     submit_label: Gönder
 template: advanced
 ---
