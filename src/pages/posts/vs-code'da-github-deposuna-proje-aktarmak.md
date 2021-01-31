@@ -1,5 +1,5 @@
 ---
-title: VS Code'da Github deposuna Proje Aktarmak
+title: VS Code'da Github Deposuna Proje Aktarmak
 subtitle: >-
   Merhaba arkadaşlar, günümüzde birçok proje VS Code ile yazılmakta. Ve bu
   projeleri GitHub depolarında saklıyoruz. Peki yeni başlayanlar için bu
@@ -8,7 +8,7 @@ subtitle: >-
 date: '2021-01-30'
 thumb_img_alt: ''
 content_img_alt: ''
-excerpt: >-
+excerpt: ''
 canonical_url: ''
 author: ihsansunman
 template: post
