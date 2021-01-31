@@ -15,42 +15,37 @@ template: post
 thumb_img_path: images/w2CQO.png
 content_img_path: images/w2CQO.png
 ---
-  Linux cihazıma TightVNC Server kurdum ancak VNC ile bağlanmaya çalıştığımda gri bir ekran karşıladı beni. Aslında böyle bir ekran bizi karşıladığında sorunsuzca bağlandık demektir. Ancak bağlantı ekranımızda gerekli bileşenleri cihazımız otomatik açmadığını anlarız. Bunu da küçük bir düzenleme ile bu sorunu düzeltebiliriz. Ancak cihazımız XFCE arayüzünde ise bu işlem çalışabilir. Diğer arayüzlerde uyarlama yaparak da çözebilirsiniz.
-  Kök dosya sistemimizde ~/.vnc/xstartup dosyasını yönetici izni ile açalım. 
- ```
- #!/bin/sh
+Kök dosya sistemimizde ~/.vnc/xstartup dosyasını yönetici izni ile açalım.
 
-xrdb $HOME/.Xresources
-xsetroot -solid grey
-#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
-#x-window-manager &
-# Fix to make GNOME work
-export XKL_XMODMAP_DISABLE=1
-/etc/X11/Xsession
-startxfce4 &
- ```
+    #!/bin/sh
+
+    xrdb $HOME/.Xresources
+    xsetroot -solid grey
+    #x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+    #x-window-manager &
+    # Fix to make GNOME work
+    export XKL_XMODMAP_DISABLE=1
+    /etc/X11/Xsession
+    startxfce4 &
 
 Yukardakine benzer bir metin bizi karşılayacaktır. Sonuna şu ibareleri eklersek sorun düzelecektir.
-```
-#!/bin/sh
 
-xrdb $HOME/.Xresources
-xsetroot -solid grey
-x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
-x-window-manager &
-# Fix to make GNOME work
-export XKL_XMODMAP_DISABLE=1
-unset SESSION_MANAGER
-unset DBUS_SESSION_BUS_ADDRESS
+    #!/bin/sh
 
-/etc/X11/Xsession
+    xrdb $HOME/.Xresources
+    xsetroot -solid grey
+    x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+    x-window-manager &
+    # Fix to make GNOME work
+    export XKL_XMODMAP_DISABLE=1
+    unset SESSION_MANAGER
+    unset DBUS_SESSION_BUS_ADDRESS
 
-xfce4-panel &
-xfsettingsd &
-xfwm4 &
-xfdesktop &
-pcmanfm &
-xfce4-terminal &
-```
+    /etc/X11/Xsession
 
-  
+    xfce4-panel &
+    xfsettingsd &
+    xfwm4 &
+    xfdesktop &
+    pcmanfm &
+    xfce4-terminal &
