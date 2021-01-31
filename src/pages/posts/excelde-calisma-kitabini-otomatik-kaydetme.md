@@ -1,6 +1,9 @@
 ---
 title: Excelde çalışma kitabını otomatik kaydetme
-subtitle: ''
+subtitle: >-
+  Merhaba arkadaşlar, İş yerimde elektrik kesintisinden dolayı önemli bilgiler
+  kayboluyordu, buna çözüm üretmek adına çalışma kitabını otomatik kaydetmeyi
+  öğrendim ve uyguladım, Bunu sizlerle paylaşmak istedim umarım yararlı olur.
 date: '2021-01-24'
 thumb_img_alt: Excel-oto
 content_img_alt: Excel-oto
