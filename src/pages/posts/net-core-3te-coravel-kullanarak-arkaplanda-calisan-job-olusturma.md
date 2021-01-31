@@ -16,7 +16,7 @@ excerpt: >-
   tarafından desteklenmesi ön plana çıkıyor.
 canonical_url: ''
 template: post
-thumb_img_path: images/coravel.png
+content_img_path: images/coravel.png
 ---
 Worker servisleri, .NET Core 3 tarafından sunulan yeni bir şablon. Şimdi, .NET Core 3 Worker hizmetini ve Coravel'i birleştirerek bir zamanlayıcı job'ını nasıl uygulanacağını görelim .
 
