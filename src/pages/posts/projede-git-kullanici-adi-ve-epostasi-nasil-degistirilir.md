@@ -8,6 +8,8 @@ date: '2020-10-19'
 thumb_img_alt: github-config
 content_img_alt: github-config
 excerpt: >-
+  Git'e projemizi atarken mevcut adımızı değiştirmek istersek config ayarlarını
+  değiştirmemiz gerekiyor. 
 canonical_url: ''
 template: post
 content_img_path: images/github-config.png

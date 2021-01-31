@@ -9,7 +9,7 @@ export default class FormField extends React.Component {
             <div className="form-group form-checkbox">
               <input type="checkbox" id={_.get(field, 'name', null)} name={_.get(field, 'name', null)}{...(_.get(field, 'is_required', null) ? ({required: true}) : null)}/>
               {_.get(field, 'label', null) && (
-              <label htmlFor={_.get(field, 'name', null)}>{_.get(field, 'label', null)}</label>
+              <label class="checkboxform" htmlFor={_.get(field, 'name', null)}>{_.get(field, 'label', null)}</label>
               )}
             </div>
             ) : ((_.get(field, 'input_type', null) === 'select') ? (

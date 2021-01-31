@@ -8,6 +8,8 @@ date: '2020-07-17'
 thumb_img_alt: win-forms-console
 content_img_alt: win-forms-console
 excerpt: >-
+  Daha önce oluşturduğumuz Forms uygulamasında çeşitli sebeplerden dolayı konsol
+  uygulaması da kullanmak isteyebiliriz. Nasıl yapılacağına bakalım.
 canonical_url: ''
 template: post
 content_img_path: images/win-forms-console.jpg

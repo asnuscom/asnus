@@ -24,11 +24,11 @@ Daha sonrasında yeni bir terminal başlatmak adına yukarıdaki menüden  Termi
 
 ```
 
-PS D:\Github\test> git config user.name "KULLANICIADI"
-PS D:\Github\test> git config user.email "KULLANICIADI@MAIL.COM"
-PS D:\Github\test> git remote add origin https://github.com/ihsansunman/test.git
-PS D:\Github\test> git branch -M main
-PS D:\Github\test> git push -u origin main
+git config user.name "KULLANICIADI"
+git config user.email "KULLANICIADI@MAIL.COM"
+git remote add origin https://github.com/ihsansunman/test.git
+git branch -M main
+git push -u origin main
 
 ```
 
