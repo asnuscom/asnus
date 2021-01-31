@@ -10,10 +10,6 @@ date: '2019-12-02'
 thumb_img_alt: windows-original-uyarisi
 content_img_alt: windows-original-uyarisi
 excerpt: >-
-  Windows'umuz orijinal lisansına sahip olmadığımız taktirde, sağ alt köşede
-  uyarı metni verir. Bu durum oldukça can sıkıcı olabilir. Çünkü tüm ekranlarda
-  göze batarken, aynı zamanda arkaplan resmi de değiştirmemize izin vermez. Hadi
-  nasıl kaldırabileceğimize bakalım.
 canonical_url: lorem-ipsum
 template: post
 thumb_img_path: images/windows-original-uyarisi.jpg

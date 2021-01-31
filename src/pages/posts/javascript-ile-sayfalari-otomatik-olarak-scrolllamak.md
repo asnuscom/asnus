@@ -9,9 +9,6 @@ date: '2020-07-17'
 thumb_img_alt: infinityScroll
 content_img_alt: infinityScroll
 excerpt: >-
-  Twitter, facebook gibi akış sayfaları yüklemek için farenizin tekerini
-  kullanarak sürüklemeniz gerekmektedir. Bunu javascript ile otomatik
-  yapabilirsiniz.
 canonical_url: ''
 template: post
 thumb_img_path: images/infinityScroll.png

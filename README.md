@@ -1,8 +1,10 @@
-# ✨ asnus ✨
+# ✨ Asnus Blog ✨
 
-<img src="https://themes.stackbit.com/images/fresh-demo-1024x768.png" width="600">
+<img src="https://raw.githubusercontent.com/asnuscom/asnus/master/static/images/ScreenShot.png" width="800">
 
-This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
+## For Live Site
+[http://www.asnus.com](http://asnus.com)
+
 
 ## Develop Locally
 
@@ -11,7 +13,6 @@ This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wi
 1. Install npm dependencies:
 
         npm install
-
 
 
 1. Start the Gatsby local development server:
@@ -24,5 +25,7 @@ This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wi
 
 
 ## Colophon
+
+This is a [Gatsby](https://gatsbyjs.com) site using Git as a [CMS](https://en.wikipedia.org/wiki/Content_management_system). It was created with [Stackbit](https://www.stackbit.com?utm_source=project-readme&utm_medium=referral&utm_campaign=user_themes) in under a minute.
 
 Generated at `2021-01-08T11:07:17.888Z` by Stackbit version `0.3.42`.

@@ -1,7 +1,8 @@
 ---
 author: ihsansunman
 title: DNS Nasıl Çalışır ve Güvenlik sorunları nelerdir?
-subtitle: ihsansunman
+subtitle: 
+DNS, Domain Name System kelimelerinin kısaltılmış halidir. Türkçe karşılığı Alan İsimlendirme Sistemi’dir. İnternetimizin adres defterine benzetebiliriz. İnternette gezinmemiz için gerekli olan adresleri tutan bir sistemdir.
 date: '2019-12-15'
 thumb_img_alt: ''
 content_img_alt: ''
@@ -20,9 +21,6 @@ content_img_path: images/dns.png
 ---
 ## DNS Nasıl Çalışır ve Güvenlik sorunları nelerdir?
 
-__DNS Nedir?__
-
-  DNS, Domain Name System kelimelerinin kısaltılmış halidir. Türkçe karşılığı Alan İsimlendirme Sistemi’dir. İnternetimizin adres defterine benzetebiliriz. İnternette gezinmemiz için gerekli olan adresleri tutan bir sistemdir.
 IP adresini daha önceden duymuşsunuzdur. İnternette gezindiğimiz her web sitesinin bir IP adresi vardır. Eğer DNS olmasaydı Google ’ye girmek istediğimizde www.google.com adresi yerine 172.217.169.206 gibi uzun ve karmaşık sayılar ile web sitelere girmemiz gerekecekti. Bu hem akılda kalması çok zor hem de gereksiz bir uğraş olurdu. Bunun yerine DNS sistemi bize bu IP adresi yerine daha basit olan alan adları ile internette daha rahat gezinmemizi sağlıyor. 
 
 __DNS Nasıl Çalışır?__

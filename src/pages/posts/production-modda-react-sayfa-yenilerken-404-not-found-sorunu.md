@@ -9,9 +9,6 @@ date: '2020-02-21'
 thumb_img_alt: 404-not-found
 content_img_alt: 404-not-found
 excerpt: >-
-  React uygulamanızı development mod'da çalıştırırken sorun yok ancak production
-  mod'da yani server'a deploy ettiğinizde sayfayı yenilediğinizde yada yeni
-  sekmede açtığınızda sayfa bulunamadı hatası alıyorsanız çözümü burada.
 canonical_url: ''
 template: post
 content_img_path: images/404-not-found.png

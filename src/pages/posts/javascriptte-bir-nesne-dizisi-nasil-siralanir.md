@@ -8,8 +8,6 @@ date: '2020-03-16'
 thumb_img_alt: javascript-sorting
 content_img_alt: javascript-sorting
 excerpt: >-
-  Sort metoduyla bir diziyi sıralamak oldukça kolay, ancak bu dizi, bir nesne
-  dizisiyse işimiz biraz daha karmaşık. Hadi bakalım.
 canonical_url: ''
 template: post
 thumb_img_path: images/javascript-sorting.png
