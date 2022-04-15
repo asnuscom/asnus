@@ -18,7 +18,7 @@ export default class Body extends React.Component {
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-X775Z5FTRJ"></script>
           <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){dataLayer.push(arguments)}
             gtag('js', new Date());
 
             gtag('config', 'G-X775Z5FTRJ');
