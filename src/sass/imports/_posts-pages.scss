@@ -74,7 +74,8 @@
   width: 50%;
 
   .post-inside {
-    border: 1px solid #474747;
+    border: 1px solid;
+    border-color: #474747 !important;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
