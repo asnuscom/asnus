@@ -9,14 +9,14 @@ html {
 }
 
 body {
-  background: #fff;
-  color: _palette(primary);
+  background: #000;
+  color: #fff;
   line-height: 1.66667;
 }
 
 a {
   border-bottom: 2px solid _palette(accent);
-  color: _palette(secondary);
+  color: #fff;
   text-decoration: none;
   -webkit-transition: border .3s ease, color .3s ease;
   transition: border .3s ease, color .3s ease;
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(secondary);
+  color: #fff;
   font-weight: bold;
   line-height: 1.2;
   margin: 1.66667rem 0 0.83333rem;
