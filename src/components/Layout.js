@@ -14,8 +14,14 @@ export default class Body extends React.Component {
         <Helmet>
           <title>{_.get(this.props, 'pageContext.frontmatter.title', null) && (_.get(this.props, 'pageContext.frontmatter.title', null) + ' - ')}{_.get(this.props, 'pageContext.site.siteMetadata.title', null)}</title>
 
-          {/* Google Analytics */}
+          {/* Global site tag (gtag.js) - Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-X775Z5FTRJ"></script>
+          window.dataLayer = window.dataLayer || []
+          function gtag(){dataLayer.push(arguments)}
+          gtag('js', new Date());
+
+          gtag('config', 'G-X775Z5FTRJ')
+          {/* Global site tag (gtag.js) - Google Analytics */}
 
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initialScale=1.0" />
@@ -30,6 +36,7 @@ export default class Body extends React.Component {
             <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
           )}
         </Helmet>
+
         <div id="page" className={'site style-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style', null) + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)}>
           <Header {...this.props} />
           <div id="content" className="site-content">
