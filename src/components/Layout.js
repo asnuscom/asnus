@@ -16,11 +16,11 @@ export default class Body extends React.Component {
 
           {/* Global site tag (gtag.js) - Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-X775Z5FTRJ"></script>
-          window.dataLayer = window.dataLayer || []
+          <script> window.dataLayer = window.dataLayer || []
           function gtag(){dataLayer.push(arguments)}
           gtag('js', new Date());
 
-          gtag('config', 'G-X775Z5FTRJ')
+          gtag('config', 'G-X775Z5FTRJ')</script>
           {/* Global site tag (gtag.js) - Google Analytics */}
 
           <meta charSet="utf-8" />
