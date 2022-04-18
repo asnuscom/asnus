@@ -16,14 +16,6 @@ export default class Body extends React.Component {
 
           {/* Global site tag (gtag.js) - Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-X775Z5FTRJ"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){window.dataLayer.push(arguments)}
-            gtag('js', new Date());
-
-            gtag('config', 'G-X775Z5FTRJ');
-          </script>
-          {/* Global site tag (gtag.js) - Google Analytics */}
 
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initialScale=1.0" />
