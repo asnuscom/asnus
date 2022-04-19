@@ -1,5 +1,5 @@
 ---
-title: React (1) - Nedir Bu React?
+title: React - Nedir Bu React?
 subtitle: >-
   React nedir sorusuna verilebilecek en kısa cevap "Javascript Kütüphanesi" olacaktır.
   Peki neden buna ihtiyaç duyduk? Neden kütüphane oluşturulması gerekti, bunları cevaplamamız gerekir.
