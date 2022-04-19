@@ -16,7 +16,7 @@ Custom Hook ise tekrarlanan kodun önüne geçebilmemiz adına ortaya çıkan bi
 
 Örnek bir yapıyı birlikte deneyelim: 
 
-> İlgili kod yapısına doğrudan [bu adresten](https://codesandbox.io/s/customhook-asnus-zwl5rt) erişebilirsiniz.
+*İlgili kod yapısına doğrudan [bu adresten](https://codesandbox.io/s/customhook-asnus-zwl5rt) erişebilirsiniz.*
 
 Öncelik olarak customHook.js dosyası oluşturarak buraya kullanacağımız Custom Hook yapısını tanımlayalım.
 
@@ -111,4 +111,4 @@ export default App;
 
 Çıktımızı aşağıdaki gibi almamız gerekmektedir. Böylelikle tek bir hook oluşturarak ayrı componentlerde ayrı değerler dönebildik. 
 
-![Custom Hook Çıktısı][https://asnus.com/custom_hook_cikti.png]
+![Custom Hook Çıktısı][https://asnus.com/images/custom_hook_cikti.png]
