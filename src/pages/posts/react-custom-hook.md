@@ -111,4 +111,4 @@ export default App;
 
 Çıktımızı aşağıdaki gibi almamız gerekmektedir. Böylelikle tek bir hook oluşturarak ayrı componentlerde ayrı değerler dönebildik. 
 
-![Custom Hook Çıktısı][https://asnus.com/images/custom_hook_cikti.png]
+![Custom Hook Çıktısı](https://asnus.com/images/custom_hook_cikti.png)
