@@ -12,7 +12,7 @@ template: post
 thumb_img_path: images/reactCustomHook.png
 content_img_path: images/reactCustomHook.png
 ---
-Custom Hook ise tekrarlanan kodun önüne geçebilmemiz adına ortaya çıkan bir yapıdır. Bir Hook yapısını birden fazla kullanmamız gerektiğinde kullanırız. Böylelikle daha temiz bir kod yapısı elde ederiz.
+Custom Hook ise tekrarlanan kodun önüne geçebilmemiz adına ortaya çıkan bir yapıdır. Custom Hook yapısı ile tekrar kullanılabilir fonksiyonlar oluştururuz. Böylelikle daha temiz bir kod yapısı ve basitlik elde ederiz.
 
 Örnek bir yapıyı birlikte deneyelim: 
 
@@ -112,3 +112,6 @@ export default App;
 Çıktımızı aşağıdaki gibi almamız gerekmektedir. Böylelikle tek bir hook oluşturarak ayrı componentlerde ayrı değerler dönebildik. 
 
 ![Custom Hook Çıktısı](https://asnus.com/images/custom_hook_cikti.png)
+
+
+Daha fazla hook örneği için [Beautiful React Hooks](https://antonioru.github.io/beautiful-react-hooks/) sayfasına veya [Github](https://github.com/antonioru/beautiful-react-hooks) sayfasına bakabilirsiniz.
