@@ -12,7 +12,7 @@ excerpt: >-
   uygulaması nasıl geliştirmek için gerekli yazılımların kurulumlarını anlatmak
   istiyorum.
 canonical_url: ''
-author: sametsunman
+author: sametsunman, ihsansunman
 featured: true
 template: post
 thumb_img_path: images/react-native.png
