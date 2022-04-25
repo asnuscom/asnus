@@ -47,10 +47,10 @@ export default class Blog extends React.Component {
 
                   <div className="authorName">
                     {_.get(post, 'frontmatter.author', null) && (_.split(_.get(post, 'frontmatter.author', null), ',').map((author, index) => {
-                      return <p>
+                      return <div>
                         {index !== 0 && <span style={{ marginInline: '3px' }}>&</span>}
-                        <a href={withPrefix(author)}>{author.toUpperCase()}</a>
-                      </p>
+                        <a href={withPrefix(author.trim())}>{author.trim().toUpperCase()}</a>
+                      </div>
                     })
                     )}
                   </div>

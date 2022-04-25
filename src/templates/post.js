@@ -22,11 +22,11 @@ export default class Post extends React.Component {
       <Layout {...this.props}>
         <article className="post post-full">
           <header className="post-header inner-sm">
-            <div className="author">
+            <div style={{display: 'flex'}}>
             {_.get(this.props, 'pageContext.frontmatter.author', null) && (_.split(_.get(this.props, 'pageContext.frontmatter.author', null), ',').map((author, index) => {
-              return <a href={withPrefix(author)}  className="author" style={{alignItems: 'end', marginRight: '10px', border: 'unset'}} >
-                <img className="profile-pic" src={withPrefix('images/' + author + '.png')} alt="profile_pic" />
-                <h6>{htmlToReact(author)}</h6>
+              return <a href={withPrefix(author.trim())}  className="author" >
+                <img className="profile-pic" src={withPrefix('images/' + author.trim() + '.png')} alt="profile_pic" />
+                <h6>{htmlToReact(author.trim())}</h6>
               </a>
             })
             )}
