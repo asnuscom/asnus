@@ -26,11 +26,15 @@ export default class SectionPosts extends React.Component {
                       <header className="post-header">
                         <h3 className="post-title"><Link to={withPrefix(_.get(post, 'url', null))} rel="bookmark">{_.get(post, 'frontmatter.title', null)}</Link></h3>
                       </header>
-                      {_.get(post, 'frontmatter.author', null) && (
-                      <div className="authorName">       
-                        <p><a href={withPrefix(_.get(post, 'frontmatter.author', null))}>{_.get(post, 'frontmatter.author', null).toUpperCase()}</a></p>
+                      <div className="authorName">
+                    {_.get(post, 'frontmatter.author', null) && (_.split(_.get(post, 'frontmatter.author', null), ',').map((author, index) => {
+                      return <div>
+                        {index !== 0 && <span style={{ marginInline: '3px' }}>&</span>}
+                        <a href={withPrefix(author.trim())}>{author.trim().toUpperCase()}</a>
                       </div>
-                      )}
+                    })
+                    )}
+                  </div>
                       {_.get(post, 'frontmatter.subtitle', null) && (
                       <div className="post-content">
                         <p>{_.get(post, 'frontmatter.subtitle', null)}</p>

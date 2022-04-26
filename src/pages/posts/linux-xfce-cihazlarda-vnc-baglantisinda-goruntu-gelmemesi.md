@@ -1,5 +1,5 @@
 ---
-author: ihsansunman
+author: ihsansunman, sametsunman
 title: Linux-XFCE Cihazlarda VNC Bağlantısında Görüntü Gelmemesi
 subtitle: >-
   Linux cihazıma TightVNC Server kurdum ancak VNC ile bağlanmaya çalıştığımda
