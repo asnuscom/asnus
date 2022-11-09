@@ -20,7 +20,7 @@ Custom Hook ise tekrarlanan kodun önüne geçebilmemiz adına ortaya çıkan bi
 
 Öncelik olarak customHook.js dosyası oluşturarak buraya kullanacağımız Custom Hook yapısını tanımlayalım.
 
-```
+```javascript
 import { useState, useEffect } from "react";
 
 function useCustomHook(initializer, componentName) {
@@ -46,7 +46,7 @@ export default useCustomHook;
 
 Bu tanımları sağladığımızda Custom Hook yapımızı oluşturmuş oluyoruz. Bu Hook yapısını farklı componentlerde kullanalım. Bunun için FirstComponent.js adlı bir dosya oluşturuyoruz.
 
-```
+```javascript
 import React from "react";
 
 // Custom Hook yapısını çağrıyoruz
@@ -69,7 +69,7 @@ export default FirstComponent;
 
 Farkı anlayabilmemiz için SecondComponent.js adlı bir dosya daha oluşturalım. Ve Custom Hook yapısına farklı değerleri döndürelim.
 
-```
+```javascript
 import React from "react";
 
 import useCustomHook from "../useCustomHook";
@@ -90,7 +90,7 @@ export default SecondComponent;
 
 Son işlem olarak bu iki yapımızı App.js de çağıralım. Ve çıktımızı kontrol edelim.
 
-```
+```javascript
 import React from "react";
 import FirstComponent from "./components/FirstComponent";
 import SecondComponent from "./components/SecondComponent";
