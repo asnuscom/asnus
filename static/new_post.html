@@ -83,7 +83,7 @@
           placeholder="Token"
           id="token"
         />
-        <a href="https://github.com/settings/tokens/new"
+        <a href="https://github.com/settings/tokens/new" target="_blank"
           ><button class="btn btn-danger">
             <i class="fa fa-solid fa-key"></i></button
         ></a>
@@ -204,7 +204,7 @@
         finalOutput.innerHTML = defaultValue;
 
         var data = JSON.stringify({
-          message: "New Post",
+          message: `New Post - ${title.value}`,
           content: `${content}`,
         });
 
@@ -217,7 +217,6 @@
           },
           data: data,
         };
-
         setData(config);
       });
 
@@ -230,9 +229,10 @@
         const reader = new FileReader();
         reader.addEventListener("load", (event) => {
           var image64 = btoa(unescape(encodeURIComponent(event.target.result)));
+          let splitImage = event.target.result.split(",");
           var data = JSON.stringify({
-            message: "New Image",
-            content: `${image64}`,
+            message: `Upload ${image.files[0].name}`,
+            content: `${splitImage[1]}`,
           });
           var config = {
             method: "put",
@@ -243,7 +243,6 @@
             },
             data: data,
           };
-
           setData(config);
         });
         reader.readAsDataURL(image.files[0]);
