@@ -15,143 +15,239 @@
       href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins');
-        body{
-            margin: 0;
-            font-family: monospace;
-        }
-        nav{
-            width: 100%;
-            height: 65px;
-            background-color: #0f0f0f;
-            top: 0;
-            display: flex;
-            margin-bottom: 15px;
-            justify-content: center;
-            justify-items: center;
-        }
-        nav img{
-            width: 160px;
-        }
-        .editor-preview-side{
-            font-family: 'Poppins', sans-serif;
-        }
-        table {
-          border-collapse: collapse;
-          width: calc(100% - 30px);
-          margin: 15px;
-        }
-        table, th, td{
-          border: 1px solid #bbb;
-          padding: 5px;
-        }
-        
-            
+      @import url("https://fonts.googleapis.com/css2?family=Poppins");
+      body {
+        margin: 0;
+        font-family: monospace;
+      }
+      nav {
+        width: 100%;
+        height: 65px;
+        background-color: #0f0f0f;
+        top: 0;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+        justify-items: center;
+      }
+      nav div {
+        position: absolute !important;
+        display: flex;
+        left: 0;
+        margin: 15px;
+        width: 250px !important;
+      }
+      nav input:last-child {
+        position: absolute;
+        right: 0;
+        margin: 15px;
+      }
+      nav img {
+        width: 160px;
+      }
+      .editor-preview-side {
+        font-family: "Poppins", sans-serif;
+      }
+      table {
+        display: none;
+        border-collapse: collapse;
+        width: calc(100% - 30px);
+        margin: 15px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #bbb;
+        padding: 5px;
+      }
     </style>
     <nav>
-        <img src="./images/logo.svg"/>
+      <div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Token"
+          id="token"
+        />
+        <a href="https://github.com/settings/tokens/new"
+          ><button class="btn btn-danger">
+            <i class="fa fa-solid fa-key"></i></button
+        ></a>
+      </div>
+      <img src="./images/logo.svg" />
+      <input
+        type="button"
+        value="Send Post"
+        class="btn btn-success"
+        id="send-post"
+      />
     </nav>
-    <textarea id="markdown-editor"></textarea>
+    <form class="mx-3 row">
+      <div class="input-group mb-3">
+        <span class="input-group-text">https://asnus.com/posts/</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Post Path"
+          id="path"
+        />
+      </div>
+      <div class="col-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text">Title</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Post Title"
+            id="title"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Post Date</span>
+          <input type="date" class="form-control" id="date" />
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="input-group mb-3">
+          <span class="input-group-text">Author Name</span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Author1, Author2"
+            id="author"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <input
+            type="file"
+            class="form-control"
+            accept="image/*"
+            name="image"
+            id="image"
+          />
+          <input
+            class="btn btn-outline-secondary"
+            type="button"
+            value="Image Upload"
+            id="image-button"
+          />
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">Brief</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Post Card Brief"
+          id="brief"
+        />
+      </div>
+      <textarea id="markdown-editor"></textarea>
+    </form>
+
     <div>
-        <table>
-            <tr>
-                <th>Element</th>
-                <th>Syntax</th>
-            </tr>
-            <tr>
-                <td>Heading</td>
-                <td># Level 1 Heading <br>
-                    ## Level 2 Heading <br>
-                    ### Level 3 Heading</td>
-            </tr>
-            <tr>
-                <td>Italic</td>
-                <td>*text* or _text_</td>
-            </tr>
-            <tr>
-                <td>Bold</td>
-                <td>**text** or __text__</td>
-            </tr>
-            <tr>
-                <td>Blockquote</td>
-                <td>> or >></td>
-            </tr>
-            <tr>
-                <td>Links</td>
-                <td>[Site Name](Site URL)</td>
-            </tr>
-            <tr>
-                <td>Email Address</td>
-                <td>&lt;email address&gt;</td>
-            </tr>
-            <tr>
-                <td>Images</td>
-                <td>![Alt Text](Path to Image)</td>
-            </tr>
-            <tr>
-                <td>Ordered List</td>
-                <td>1. Item 1<br>
-                    2. Item 2<br>
-                    3. Item 3</td>
-            </tr>
-            <tr>
-                <td>Unordered List</td>
-                <td>Use *, – or + * <br>
-                    * Item 1<br>
-                    * Item 2<br>
-                    * Item 3</td>
-            </tr>
-            <tr>
-                <td>Sublist</td>
-                <td>Use indentation<br>
-                    1. Item 1<br>
-                    1. Sub-item 1<br>
-                    2. Sub-item 2<br>
-                    2. Item 2<br>
-                    3. Item 3</td>
-            </tr>
-            <tr>
-                <td>Inline Code</td>
-                <td>`code`</td>
-            </tr>
-            <tr>
-                <td>Code Block</td>
-                <td>``` code here ```</td>
-            </tr>
-            <tr>
-                <td>Horizontal Rules</td>
-                <td>--- or ***</td>
-            </tr>
-        </table>
+      <p id="final-output"></p>
     </div>
-    
 
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
     <script>
-      const defaultValue = `---
-title: POST_TITLE
-subtitle: >-
-  POST_CARD_BRIEF_DESCRIPTION
-date: 'POST_DATE' // Example: 2023-01-01
-thumb_img_alt: ''
-content_img_alt: ''
-excerpt: ''
-canonical_url: ''
-author: AUTHOR_NAME, SECOND_AUTHOR_NAME
-template: post
-thumb_img_path: images/THUMPNAIL_IMAGE.png
-content_img_path: images/POST_IMAGE.png
+      const finalOutput = document.getElementById("final-output");
+      const sendPost = document.getElementById("send-post");
+      const path = document.getElementById("path");
+      const title = document.getElementById("title");
+      const author = document.getElementById("author");
+      const brief = document.getElementById("brief");
+      const date = document.getElementById("date");
+      const image = document.getElementById("image");
+      const token = document.getElementById("token");
+      const editor = document.getElementById("markdown-editor");
+      const imageButton = document.getElementById("image-button");
 
----
-POST_CONTENT
-`;
+      function setData(config) {
+        axios(config)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+
+      sendPost.addEventListener("click", function () {
+        const defaultValue = `--- \ntitle: ${title.value} \nsubtitle: >- \n  ${
+          brief.value
+        } \ndate: ${
+          date.value
+        } \nthumb_img_alt: '' \ncontent_img_alt: '' \nexcerpt: '' \ncanonical_url: '' \nauthor: ${
+          author.value
+        } \ntemplate: post \nthumb_img_path: images/${
+          image.files[0].name
+        } \ncontent_img_path: images/${
+          image.files[0].name
+        } \n---\n${markdownEditor.value()}`;
+        var content = btoa(unescape(encodeURIComponent(defaultValue)));
+        finalOutput.innerHTML = defaultValue;
+
+        var data = JSON.stringify({
+          message: "New Post",
+          content: `${content}`,
+        });
+
+        var config = {
+          method: "put",
+          url: `https://api.github.com/repos/asnuscom/asnus/contents/src/pages/posts/${path.value}.md`,
+          headers: {
+            Authorization: `Bearer ${token.value}`,
+            "Content-Type": "application/json",
+          },
+          data: data,
+        };
+
+        setData(config);
+      });
+
+      token.value = localStorage.getItem("token");
+      token.addEventListener("change", function () {
+        localStorage.setItem("token", token.value);
+      });
+
+      imageButton.addEventListener("click", function () {
+        const reader = new FileReader();
+        reader.addEventListener("load", (event) => {
+          var image64 = btoa(unescape(encodeURIComponent(event.target.result)));
+          var data = JSON.stringify({
+            message: "New Image",
+            content: `${image64}`,
+          });
+          var config = {
+            method: "put",
+            url: `https://api.github.com/repos/asnuscom/asnus/contents/static/images/${image.files[0].name}`,
+            headers: {
+              Authorization: `Bearer ${token.value}`,
+              "Content-Type": "application/json",
+            },
+            data: data,
+          };
+
+          setData(config);
+        });
+        reader.readAsDataURL(image.files[0]);
+      });
 
       var markdownEditor = new SimpleMDE({
         element: document.getElementById("markdown-editor"),
@@ -162,18 +258,9 @@ POST_CONTENT
         spellChecker: false,
         autofocus: true,
         placeholder: "Type here...",
-        hideIcons: ["guide"],
+        hideIcons: ["guide", "side-by-side"],
         showIcons: ["code", "table", "horizontal-rule"],
-        initialValue: defaultValue,
-        insertTexts: {
-          horizontalRule: ["", "\n\n-----\n\n"],
-          image: ["![](http://", ")"],
-          link: ["[", "](http://)"],
-          table: [
-            "",
-            "\n\n| Column 1 | Column 2 | Column 3 |\n| -------- | -------- | -------- |\n| Text     | Text      | Text     |\n\n",
-          ],
-        },
+        // initialValue: "hello",
       });
     </script>
   </body>
