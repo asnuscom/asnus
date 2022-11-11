@@ -48,7 +48,7 @@ axios(config)
           });
 ```
 
-Yukarıda bulunan kod bloğunu kendi yapınıza uygun düzenliyebilirsiniz. `Dosya içeriği` yazan bölüme isterseniz bir yazıyı, isterseniz ise bir resmi koyabilirsiniz. Buraya konulan her türlü içerik Base64 formatına çevrilerek Github Reponuza iletilmektedir. Bu sebeple sorun vermemektedir. Aynı dosya ismine sahip dosya isminine ait endpointe tekrar istek attığınızda ise içerik yeni göndermiş olduğunuz haline düzenlenecektir.
+Yukarıda bulunan kod bloğunu kendi yapınıza uygun düzenliyebilirsiniz. `Dosya içeriği` yazan bölüme isterseniz bir yazıyı, isterseniz ise bir resmi koyabilirsiniz. Buraya konulan her türlü içerik Base64 formatına çevrilerek Github Reponuza iletilmektedir. Bu sebeple sorun vermemektedir. Aynı dosya ismine sahip endpointe tekrar istek attığınızda ise içerik yeni göndermiş olduğunuz haline düzenlenecektir.
 
 **Dosya Silme**
 
