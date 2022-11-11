@@ -15,14 +15,14 @@ content_img_path: images/mouse-and-keyboard.jpg
 
 **1. Yazılım yolu ile fare ve klavye hareketlerini kaydetme**
 
-	En basit ve en güzel yöntemlerden biri budur. Bilgisayarınıza kurduğunuz programlarla, mouse'unuzu ya da klavye'nizi programlayabilirsiniz.
+En basit ve en güzel yöntemlerden biri budur. Bilgisayarınıza kurduğunuz programlarla, mouse'unuzu ya da klavye'nizi programlayabilirsiniz.
 	
-	Örnek olarak;
-* 	[AutoMouser](https://www.gezginler.net/indir/automouser.html)
+Örnek olarak;
+*  [AutoMouser](https://www.gezginler.net/indir/automouser.html)
 
 ![](https://www.gezginler.net/indir/resim-grafik/t_automouser-1405699871.jpg)
 
-		Klavye ve Fare Otomatik Tıklama Programı ile ister farenizin isterse klavyenizin belirlediğiniz tuşları veya hareketleri otomatik olarak istediğiniz zamanda ve istediğiniz tekrarda yapmasını sağlayabilirsiniz.
+Klavye ve Fare Otomatik Tıklama Programı ile ister farenizin isterse klavyenizin belirlediğiniz tuşları veya hareketleri otomatik olarak istediğiniz zamanda ve istediğiniz tekrarda yapmasını sağlayabilirsiniz.
 		
 		
 *  [Ghost Mouse](https://www.gezginler.net/indir/ghost-mouse.html)
@@ -30,15 +30,16 @@ content_img_path: images/mouse-and-keyboard.jpg
 ![](https://www.gezginler.net/indir/resim-grafik/t_ghost-mouse-1400243050.jpg)
 
 
-		Küçük boyutu ve basit arayüzüyle kullanım kolaylığı sunan Ghost Mouse oyun ve çeşitli programlarda gerçekleştirmeniz gereken mouse hareketlerini otomatik hale getirerek zaman ve enerji tasarrufu sağlar.
+Küçük boyutu ve basit arayüzüyle kullanım kolaylığı sunan Ghost Mouse oyun ve çeşitli programlarda gerçekleştirmeniz gereken mouse hareketlerini otomatik hale getirerek zaman ve enerji tasarrufu sağlar.
 		
 		
 		
 		
 **2. Script ile**
 
-	Bilgisayarda basitçe oluşturacağımız kod satırlarıyla da otomatik olarak klavyedeki belirli süre içersinde otomatik olarak tuşlara bastırabiliriz.
-	Hemen bir not defteri açıp aşağıdaki kodları yazın:
+Bilgisayarda basitçe oluşturacağımız kod satırlarıyla da otomatik olarak klavyedeki belirli süre içersinde otomatik olarak tuşlara bastırabiliriz.
+Hemen bir not defteri açıp aşağıdaki kodları yazın:
+
 	`
 	set wsc = CreateObject("WScript.Shell")
 	Do
@@ -47,15 +48,15 @@ content_img_path: images/mouse-and-keyboard.jpg
 	Loop
 	`
 	
-	Daha sonrasında ise bu belgeyi farklı kaydederek noSleep.vbs adıyla kaydedin. Kaydettiğiniz dosyayı açtığınızda 5 dakikada bir klavyemizde gizli olan F13 tuşuna basılacak. Böylece bilgisayarımız uyku moduna girmeyecektir. Dilerseniz F13 yerine NUMLOCK yada diğer tuş kombinasyonlarını yazabilirsiniz. Yine aynı şekilde sayılarla oynayarak süreyi düşürebilir ya da arttırabilirsiniz.
+Daha sonrasında ise bu belgeyi farklı kaydederek noSleep.vbs adıyla kaydedin. Kaydettiğiniz dosyayı açtığınızda 5 dakikada bir klavyemizde gizli olan F13 tuşuna basılacak. Böylece bilgisayarımız uyku moduna girmeyecektir. Dilerseniz F13 yerine NUMLOCK yada diğer tuş kombinasyonlarını yazabilirsiniz. Yine aynı şekilde sayılarla oynayarak süreyi düşürebilir ya da arttırabilirsiniz.
 	
 **3. Video yardımıyla**
 
-	Bir diğer yöntemiz ise video oynatmak. Evet, böyle bir yöntem mevcut. Yukarıdaki durumlar işe yaramadığında, örneğin bilgisayarınıza yazılım kurma izniniz yoksa bu yöntemi deneyebilirsiniz.
+Bir diğer yöntemiz ise video oynatmak. Evet, böyle bir yöntem mevcut. Yukarıdaki durumlar işe yaramadığında, örneğin bilgisayarınıza yazılım kurma izniniz yoksa bu yöntemi deneyebilirsiniz.
 	
 	![](https://i.ytimg.com/vi/v4bav9V9Bi8/maxresdefault.jpg)
 	
-	Kullanımı ise gayet basit. Aşağıdaki videoları tabletinizde ya da telefonunuzda açın. Daha sonrasında ise üzerine mouse'unuzu yerleştirin. İşte bu kadar!
+Kullanımı ise gayet basit. Aşağıdaki videoları tabletinizde ya da telefonunuzda açın. Daha sonrasında ise üzerine mouse'unuzu yerleştirin. İşte bu kadar!
 		
 *  [Mouse Mover/Jiggler | Manipulation | Cheat | 2 Hours Video](https://www.youtube.com/watch?v=gVs0unbKAN4&t=12s)
 *  [Mouse jiggler 100 % working ( WOW ) simply superb](https://www.youtube.com/watch?v=cYCmQBDvHlY)
