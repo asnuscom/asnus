@@ -44,7 +44,7 @@
         justify-content: center;
         justify-items: center;
       }
-      nav div {
+      .token-element {
         position: absolute !important;
         display: flex;
         left: 0;
@@ -52,8 +52,9 @@
         width: 250px !important;
       }
       nav input:last-child {
-        position: absolute;
-        right: 0;
+        position: absolute !important;
+        display: flex;
+        right: 0 !important;
         margin: 15px;
       }
       nav img {
@@ -76,7 +77,7 @@
       }
     </style>
     <nav>
-      <div>
+      <div class="token-element">
         <input
           type="text"
           class="form-control"
@@ -250,10 +251,10 @@
 
       var markdownEditor = new SimpleMDE({
         element: document.getElementById("markdown-editor"),
-        // autosave: {
-        //   enabled: true,
-        //   uniqueId: "markdown-autosave",
-        // },
+        autosave: {
+          enabled: true,
+          uniqueId: "markdown-autosave",
+        },
         spellChecker: false,
         autofocus: true,
         placeholder: "Type here...",
