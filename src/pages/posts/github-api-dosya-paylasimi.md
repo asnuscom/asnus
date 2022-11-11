@@ -15,11 +15,13 @@ content_img_path: images/git-api.webp
 Şuan bu yazının bulunduğu blog Github Repo'sundan yayınlanmaktadır. Her bir yazının yayınlanması için Github Repo'suna yeni bir dosya göndermemiz gerekmektedir. Bu sebeple Github API kullanarak form yapısından dosya gönderme işlemi hazırladık. Gelin bu işlemi nasıl yaptığımızdan biraz bahsedelim.
 
 **Dosyalara Ulaşmak**
+
 Öncelikle Git Repo'muza ulaşabilmemiz adına `https://api.github.com/repos/asnuscom/asnus/contents` endpointini kullanabiliriz. Buradan repoya ait dosyalar ve indirme uzantılarına ulaşabiliriz. Eğer bir webform hazırlıyorsanız buradan iletişim kurulacak ise bu endpoint size dosyaları sağladığı için dosyalarınızın listesini oluşturmanıza olanak tanır.
 
 ![API Request](https://asnus.com/images/api-req.png)
 
 **Dosya Yükleme ve Düzenleme**
+
 Öncelikle yükleme, düzenleme ve silme işlemleri için bir tokena ihtiyacımız var. [New Token](https://github.com/settings/tokens/new) adresinden bir token almamız gerekmektedir. İzin olarak 'Repo' iznini onaylamamız yeterli olacaktır. Oluştur dediğimizde token bize verilecek. Burada dikkat edilmesi gereken nokta bu token bir kere verilecektir. Kaybetmeniz durumunda tekrar oluşturmanız gerekecektir.
 
 ```
@@ -49,6 +51,7 @@ axios(config)
 Yukarıda bulunan kod bloğunu kendi yapınıza uygun düzenliyebilirsiniz. `Dosya içeriği` yazan bölüme isterseniz bir yazıyı, isterseniz ise bir resmi koyabilirsiniz. Buraya konulan her türlü içerik Base64 formatına çevrilerek Github Reponuza iletilmektedir. Bu sebeple sorun vermemektedir. Aynı dosya ismine sahip dosya isminine ait endpointe tekrar istek attığınızda ise içerik yeni göndermiş olduğunuz haline düzenlenecektir.
 
 **Dosya Silme**
+
 Dosya silme işlemi yukardaki yapıya benzer bir şekilde yapılmaktadır. Bu sefer içerik göndermemize gerek bulunmamaktadır. Methodu 'DELETE' olarak düzenleyip istek attığımızda ise ilgili endpointteki dosya silinecektir. Burada yine commit mesajı yazmamız gerektiğini unutmayalım.
 
 Bu yöntem ile projelerinize uzaktan erişebilir. Ve dilediğiniz gibi dosya gönderebilir veya silebilirsiniz.
