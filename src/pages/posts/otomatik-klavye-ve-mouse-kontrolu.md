@@ -54,7 +54,7 @@ Daha sonrasında ise bu belgeyi farklı kaydederek noSleep.vbs adıyla kaydedin.
 
 Bir diğer yöntemiz ise video oynatmak. Evet, böyle bir yöntem mevcut. Yukarıdaki durumlar işe yaramadığında, örneğin bilgisayarınıza yazılım kurma izniniz yoksa bu yöntemi deneyebilirsiniz.
 	
-	![](https://i.ytimg.com/vi/v4bav9V9Bi8/maxresdefault.jpg)
+![](https://i.ytimg.com/vi/v4bav9V9Bi8/maxresdefault.jpg)
 	
 Kullanımı ise gayet basit. Aşağıdaki videoları tabletinizde ya da telefonunuzda açın. Daha sonrasında ise üzerine mouse'unuzu yerleştirin. İşte bu kadar!
 		
