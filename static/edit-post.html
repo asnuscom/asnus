@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>Asnus - Edit Post</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/highlight.js/latest/styles/github.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins");
+      body {
+        margin: 0;
+        font-family: monospace;
+      }
+      nav {
+        width: 100%;
+        height: 65px;
+        background-color: #0f0f0f;
+        top: 0;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+        justify-items: center;
+      }
+      .token-element {
+        position: absolute !important;
+        display: flex;
+        left: 0;
+        margin: 15px;
+        width: 250px !important;
+      }
+      nav div:last-child {
+        position: absolute !important;
+        display: flex;
+        right: 0 !important;
+        margin: 15px;
+      }
+      nav img {
+        width: 160px;
+      }
+      .editor-preview-side {
+        font-family: "Poppins", sans-serif;
+      }
+      table {
+        display: none;
+        border-collapse: collapse;
+        width: calc(100% - 30px);
+        margin: 15px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #bbb;
+        padding: 5px;
+      }
+    </style>
+    <nav>
+      <div class="token-element">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Token"
+          id="token"
+        />
+        <a href="https://github.com/settings/tokens/new" target="_blank"
+          ><button class="btn btn-danger">
+            <i class="fa fa-solid fa-key"></i></button
+        ></a>
+      </div>
+      <img src="./images/logo.svg" />
+      <div>
+        <a href="/new-page.html"
+          ><button class="btn btn-info mx-2">New Post</button></a
+        >
+        <input
+          type="button"
+          value="Change Post"
+          class="btn btn-success"
+          id="send-post"
+        />
+      </div>
+    </nav>
+    <div class="m-3">
+      <div
+        class="alert alert-danger d-flex align-items-center mt-2"
+        role="alert"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2"
+          height="16px"
+          viewBox="0 0 16 16"
+          role="img"
+          aria-label="Warning:"
+        >
+          <path
+            d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+          />
+        </svg>
+        <div>It can be deleted if you choose while typing.</div>
+      </div>
+      <div class="edit-post input-group">
+        <span class="input-group-text">Edit Post</span>
+        <input
+          class="form-control"
+          list="edit-post-list"
+          id="dataList"
+          placeholder="Type to search and change data..."
+        />
+        <datalist id="edit-post-list"> </datalist>
+      </div>
+    </div>
+
+    <form class="mx-3 row">
+      <textarea id="markdown-editor"></textarea>
+    </form>
+
+    <div>
+      <p id="final-output"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
+    <script>
+      const finalOutput = document.getElementById("final-output");
+      const sendPost = document.getElementById("send-post");
+      const token = document.getElementById("token");
+      const editor = document.getElementById("markdown-editor");
+      const editPost = document.getElementById("dataList");
+      const editPostList = document.getElementById("edit-post-list");
+      let editablePost;
+
+      function setData(config) {
+        axios(config)
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+
+      function getEditablePost() {
+        let optionValues;
+        var config = {
+          method: "get",
+          url: `https://api.github.com/repos/asnuscom/asnus/contents/src/pages/posts`,
+        };
+        axios(config)
+          .then(function (response) {
+            console.log(response.data);
+            response.data.map(
+              (x) => (optionValues += `<option value="${x.name}">`)
+            );
+            editPostList.innerHTML = optionValues;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+      getEditablePost();
+
+      editPost.addEventListener("change", function () {
+        var config = {
+          method: "get",
+          url: `https://api.github.com/repos/asnuscom/asnus/contents/src/pages/posts/${editPost.value}`,
+        };
+        axios(config)
+          .then(function (response) {
+            editablePost = decodeURIComponent(
+              escape(atob(response.data.content))
+            );
+            markdownEditor.value(editablePost);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      });
+
+      sendPost.addEventListener("click", function () {
+        const defaultValue = `${markdownEditor.value()}`;
+        var content = btoa(unescape(encodeURIComponent(defaultValue)));
+        finalOutput.innerHTML = defaultValue;
+
+        var data = JSON.stringify({
+          message: `New Post - ${title.value}`,
+          content: `${content}`,
+        });
+
+        var config = {
+          method: "put",
+          url: `https://api.github.com/repos/asnuscom/asnus/contents/src/pages/posts/${editPost.value}`,
+          headers: {
+            Authorization: `Bearer ${token.value}`,
+            "Content-Type": "application/json",
+          },
+          data: data,
+        };
+        setData(config);
+      });
+
+      token.value = localStorage.getItem("token");
+      token.addEventListener("change", function () {
+        localStorage.setItem("token", token.value);
+      });
+
+      var markdownEditor = new SimpleMDE({
+        element: document.getElementById("markdown-editor"),
+        spellChecker: false,
+        autofocus: true,
+        placeholder: "Type here...",
+        hideIcons: ["guide", "side-by-side"],
+        showIcons: ["code", "table", "horizontal-rule"],
+        // initialValue: "hello",
+      });
+    </script>
+  </body>
+</html>
