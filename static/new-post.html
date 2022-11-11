@@ -51,7 +51,7 @@
         margin: 15px;
         width: 250px !important;
       }
-      nav input:last-child {
+      nav div:last-child {
         position: absolute !important;
         display: flex;
         right: 0 !important;
@@ -90,12 +90,17 @@
         ></a>
       </div>
       <img src="./images/logo.svg" />
-      <input
-        type="button"
-        value="Send Post"
-        class="btn btn-success"
-        id="send-post"
-      />
+      <div>
+        <a href="/edit-page.html"
+          ><button class="btn btn-info mx-2">Edit Post</button></a
+        >
+        <input
+          type="button"
+          value="Send Post"
+          class="btn btn-success"
+          id="send-post"
+        />
+      </div>
     </nav>
     <form class="mx-3 row">
       <div class="input-group mb-3">
