@@ -79,7 +79,7 @@ Bir not defterinde aşağıdaki kod satırlarını yazın.
 		}
 	`
 	
-![](https://asnus.com/noSleep2.png)
+![](https://asnus.com/images/noSleep2.png)
 	
 Bu kodları noSleep.ps1 adıyla kaydedebilirsiniz. Sonrasında kaydedilen dosyaya sağ tıklayarak düzenleye basın. Dosya PowerShell ISE'de açılacaktır. Run tuşuna basarak komutlarımız çalışmaya başlayacaktır. Burada yapılan işlemler 60 snde bir mouse'u hareket ettirmek ve klavyede F13 tuşuna basmaktır. Dilerseniz süreyi ve tuşu ayarlayabilirsiniz.
 	
