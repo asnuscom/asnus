@@ -38,6 +38,8 @@ Küçük boyutu ve basit arayüzüyle kullanım kolaylığı sunan Ghost Mouse o
 **2. Script ile**
 
 Bilgisayarda basitçe oluşturacağımız kod satırlarıyla da otomatik olarak klavyedeki belirli süre içersinde otomatik olarak tuşlara bastırabiliriz.
+
+***1.Yol***
 Hemen bir not defteri açıp aşağıdaki kodları yazın:
 
 	`
@@ -49,6 +51,37 @@ Hemen bir not defteri açıp aşağıdaki kodları yazın:
 	`
 	
 Daha sonrasında ise bu belgeyi farklı kaydederek noSleep.vbs adıyla kaydedin. Kaydettiğiniz dosyayı açtığınızda 5 dakikada bir klavyemizde gizli olan F13 tuşuna basılacak. Böylece bilgisayarımız uyku moduna girmeyecektir. Dilerseniz F13 yerine NUMLOCK yada diğer tuş kombinasyonlarını yazabilirsiniz. Yine aynı şekilde sayılarla oynayarak süreyi düşürebilir ya da arttırabilirsiniz.
+
+***2.Yol***
+Bence en güzel ve en işe yarayan yöntem bu. Çünkü herhangi bir admin yetkisi istemiyor.
+
+Bir not defterinde aşağıdaki kod satırlarını yazın.
+
+	`
+	 $MYJOB = Start-Job -ScriptBlock {
+		$MOVEMENTSIZE = 10
+		$SLEEPTIME = 60
+
+		Add-Type -AssemblyName System.Windows.Forms
+			while ($true) { 
+				$POSITION = [windows.Forms.Cursor]::Position
+				$POSITION.x += $MOVEMENTSIZE
+				$POSITION.y += $MOVEMENTSIZE
+				[windows.Forms.Cursor]::Position = $POSITION
+				Start-Sleep -Seconds $SLEEPTIME
+				$POSITION = [windows.Forms.Cursor]::Position
+				$POSITION.x -= $MOVEMENTSIZE
+				$POSITION.y -= $MOVEMENTSIZE
+				[Windows.Forms.Cursor]::Position = $POSITION
+				Start-Sleep -Seconds $SLEEPTIME
+				[windows.Forms.SendKeys]::Sendwait('[F13}')
+			}
+		}
+	`
+	
+![](https://asnus.com/noSleep2.png)
+	
+Bu kodları noSleep.ps1 adıyla kaydedebilirsiniz. Sonrasında kaydedilen dosyaya sağ tıklayarak düzenleye basın. Dosya PowerShell ISE'de açılacaktır. Run tuşuna basarak komutlarımız çalışmaya başlayacaktır. Burada yapılan işlemler 60 snde bir mouse'u hareket ettirmek ve klavyede F13 tuşuna basmaktır. Dilerseniz süreyi ve tuşu ayarlayabilirsiniz.
 	
 **3. Video yardımıyla**
 
