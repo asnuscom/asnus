@@ -40,6 +40,7 @@ Küçük boyutu ve basit arayüzüyle kullanım kolaylığı sunan Ghost Mouse o
 Bilgisayarda basitçe oluşturacağımız kod satırlarıyla da otomatik olarak klavyedeki belirli süre içersinde otomatik olarak tuşlara bastırabiliriz.
 
 ***1.Yol***
+
 Hemen bir not defteri açıp aşağıdaki kodları yazın:
 
 	`
@@ -53,6 +54,7 @@ Hemen bir not defteri açıp aşağıdaki kodları yazın:
 Daha sonrasında ise bu belgeyi farklı kaydederek noSleep.vbs adıyla kaydedin. Kaydettiğiniz dosyayı açtığınızda 5 dakikada bir klavyemizde gizli olan F13 tuşuna basılacak. Böylece bilgisayarımız uyku moduna girmeyecektir. Dilerseniz F13 yerine NUMLOCK yada diğer tuş kombinasyonlarını yazabilirsiniz. Yine aynı şekilde sayılarla oynayarak süreyi düşürebilir ya da arttırabilirsiniz.
 
 ***2.Yol***
+
 Bence en güzel ve en işe yarayan yöntem bu. Çünkü herhangi bir admin yetkisi istemiyor.
 
 Bir not defterinde aşağıdaki kod satırlarını yazın.
