@@ -18,4 +18,4 @@ Modelin kullanımı için birkaç örnek vardır. Örneğin, bir kullanıcı mod
 
 Genel olarak, ChatGPT bir dil modelidir ve dil üzerinde yoğun bir şekilde çalışan bir model olarak tasarlandı. Bu model, doğal dil kullanarak cevaplar verebilme yeteneğine sahip olduğu için, birçok farklı dil ve dil kombinasyonu için kullanılabilir. Kullanımı da oldukça basittir ve kullanıcılar modeli bir konuşma ortamında ya da bir chatbot olarak kullanarak faydalanabilirler.
 
-> Bu makale ChatGPT tarafından yazılmıştır.
+* Bu makale ChatGPT tarafından yazılmıştır.
