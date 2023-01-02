@@ -52,4 +52,8 @@ import { API_KEY, APP_NAME, APP_VERSION, AUTH_DOMAIN } from '@env';
 console.log(APP_NAME); // Çıktı Olarak "Asnus" ifadesi gelecektir.
 ```
 
+Ayrıca, .env dosyasının içeriği projenin çalıştırılacağı ortamdan bağımsızdır ve bu nedenle projenin farklı ortamlarda çalıştırılması sırasında çevre değişkenlerinin değerleri değiştirilebilir. Örneğin, test ortamı için .env.test, üretim ortamı için de .env.production gibi. Bu sayede, her ortam için farklı çevre değişkenleri kullanılabilir.
+
+Not: Eğer projenizin çalıştırılacağı ortamı belirtmek istemiyorsanız, varsayılan olarak .env dosyasını kullanabilirsiniz. Bu dosya, projenin çalıştırılacağı ortam belirtilmezse varsayılan olarak kullanılır.
+
 Bu blog yazısında `react-native` projemizde ortam değişkenlerini nasıl kullanacağımıza baktık. `react-native-dotenv` npm paketini kurduktan sonra `babel.config.js` dosyamızı yapılandırdık. Son olarak, bir env dosyası oluşturduk ve kullanmak istediğimiz dosyada/kaynak kodda ortam değişkenini içe aktardık.
