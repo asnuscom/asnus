@@ -15,7 +15,7 @@ content_img_path: images/Ekran görüntüsü_20230222_101735.png
 
 Bu işlemi yapabilmek için [Compressor.js](https://github.com/fengyuanchen/compressorjs) isimli kütüphane bize yardımcı olacaktır. Aşağıda bulunan görsel giriş ve çıkış görsellerimizi göstermektedir. Fark edilemiyecek kadar küçük bir kayıp ile 2MB boyutlardan 50KB gibi boyutlara inebiliriz.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c3c41c16-82d1-41d8-9d95-477ff9fe7f4e/Untitled.png)
+![Untitled](https://asnus.com/images/Untitled.png)
 
 Öncelikle kütüphanemizi projemize dahil edelim.
 
