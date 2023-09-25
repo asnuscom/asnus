@@ -15,7 +15,7 @@ content_img_path: images/debounceMain.png
 
 ## Debounce Nasıl Çalışır?
 
-Örnek üzerinden devam edelim. Kullanıcı bir **<input />** alanına aramak istediği kelimeyi yazdığında, bu kelime ile ilgili sonuçların görüntülendiği bir yapı hayal edin. Bu girdi değeri her değiştiğinde ilgili servise giderek sonuçları alacağımız bir fonksiyonumuz olsun. Ancak her tuşa bastığınızda bu işlevi çağırmak, servisinizi gereksiz yere yorabilir. İşte burada bir zamanlayıcı kullanabilirsiniz. Bu, her tuşa bastığınızda işlevin her çalıştırıldığında zamanlayıcı sıfırlanır. Bu sayede isteği göndermek için belirli bir zaman dilimini bekler. Kullanıcı yeni bir giriş yapmadıkça zamanlayıcı sıfırlanmaz ve belirlediğiniz süre sonunda istek gönderilir.
+Örnek üzerinden devam edelim. Kullanıcı bir `<input/>` alanına aramak istediği kelimeyi yazdığında, bu kelime ile ilgili sonuçların görüntülendiği bir yapı hayal edin. Bu girdi değeri her değiştiğinde ilgili servise giderek sonuçları alacağımız bir fonksiyonumuz olsun. Ancak her tuşa bastığınızda bu işlevi çağırmak, servisinizi gereksiz yere yorabilir. İşte burada bir zamanlayıcı kullanabilirsiniz. Bu, her tuşa bastığınızda işlevin her çalıştırıldığında zamanlayıcı sıfırlanır. Bu sayede isteği göndermek için belirli bir zaman dilimini bekler. Kullanıcı yeni bir giriş yapmadıkça zamanlayıcı sıfırlanmaz ve belirlediğiniz süre sonunda istek gönderilir.
 
 ![nondebounce](https://asnus.com/images/nondebounce.png)
 
@@ -25,9 +25,19 @@ Yukarıda örneğini göstermiş olduğum gibi kullanıcı her bir harfi değiş
 
 Örnekleri canlı olarak da inceleyebilirsiniz.
 
-[https://codesandbox.io/embed/asnus-nondebounce-ffkv9h?fontsize=14&hidenavigation=1&theme=dark](https://codesandbox.io/embed/asnus-nondebounce-ffkv9h?fontsize=14&hidenavigation=1&theme=dark)
+<iframe src="https://codesandbox.io/embed/asnus-nondebounce-ffkv9h?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="asnus-nonDebounce"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-[https://codesandbox.io/embed/asnus-debounce-dp279x?fontsize=14&hidenavigation=1&theme=dark](https://codesandbox.io/embed/asnus-debounce-dp279x?fontsize=14&hidenavigation=1&theme=dark)
+<iframe src="https://codesandbox.io/embed/asnus-debounce-dp279x?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="asnus-Debounce"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 ## Debounce Nasıl Kullanılır?
 
