@@ -1,7 +1,8 @@
 {
-  "name": "stackbit-fresh-theme",
-  "description": "Stackbit Fresh Theme",
-  "version": "0.0.1",
+  "name": "asnus",
+  "description": "Teknolojiye dair ipuçları",
+  "contributors": ["Samet SUNMAN","İhsan SUNMAN", "Şule SAVAŞ"],
+  "version": "0.1.2",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

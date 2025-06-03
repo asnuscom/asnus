@@ -27,4 +27,4 @@ Samet & İhsan
 
 *Okuduğunuz için teşekür ederiz!*
 
-[Gizlilik Sözleşmesi](https://asnus.netlify.app/asnus-data-protection-and-privacy-policy)
+[Gizlilik Sözleşmesi](https://asnus.com/asnus-data-protection-and-privacy-policy)

@@ -14,7 +14,7 @@ export default class Body extends React.Component {
         <Helmet>
           <title>{_.get(this.props, 'pageContext.frontmatter.title', null) && (_.get(this.props, 'pageContext.frontmatter.title', null) + ' - ')}{_.get(this.props, 'pageContext.site.siteMetadata.title', null)}</title>
 
-          {/* Google Analytics */}
+          {/* Global site tag (gtag.js) - Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-X775Z5FTRJ"></script>
 
           <meta charSet="utf-8" />
@@ -30,6 +30,7 @@ export default class Body extends React.Component {
             <link rel="icon" href={withPrefix(_.get(this.props, 'pageContext.site.siteMetadata.favicon', null))} />
           )}
         </Helmet>
+
         <div id="page" className={'site style-' + _.get(this.props, 'pageContext.site.siteMetadata.layout_style', null) + ' palette-' + _.get(this.props, 'pageContext.site.siteMetadata.palette', null)}>
           <Header {...this.props} />
           <div id="content" className="site-content">

@@ -1,10 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
-import {graphql} from 'gatsby';
+import { graphql } from 'gatsby';
 
-import {Layout} from '../components/index';
-import {htmlToReact, withPrefix} from '../utils';
+import { Layout } from '../components/index';
+import { htmlToReact, withPrefix } from '../utils';
 
 // this minimal GraphQL query ensures that when 'gatsby develop' is running,
 // any changes to content files are reflected in browser
@@ -17,39 +17,41 @@ export const query = graphql`
 `;
 
 export default class Post extends React.Component {
-    render() {
-        return (
-            <Layout {...this.props}>
-              <article className="post post-full">
-                <header className="post-header inner-sm">
-                  {_.get(this.props, 'pageContext.frontmatter.author', null) && (
-                  <a href={withPrefix(_.get(this.props, 'pageContext.frontmatter.author', null))}><div className="author">
-                    <img className="profile-pic" src={withPrefix('images/'+_.get(this.props, 'pageContext.frontmatter.author', null)+'.png')} alt="profile_pic"/>
-                    <h6>{htmlToReact(_.get(this.props, 'pageContext.frontmatter.author', null))}</h6>
-                  </div>
-                  </a>
-                  )}
-                  <h1 className="post-title underline">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
-                  {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
-                  <div className="post-subtitle">
-                    {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}
-                  </div>
-                  )}
-                </header>
-                {_.get(this.props, 'pageContext.frontmatter.content_img_path', null) && (
-                <div className="post-image">
-                  <img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path', null))} alt={_.get(this.props, 'pageContext.frontmatter.content_img_alt', null)} />
-                </div>
-                )}
-                <div className="post-content inner-sm">
-                  {htmlToReact(_.get(this.props, 'pageContext.html', null))}
-                </div>
-                <footer className="post-meta inner-sm">
-                  <time className="published"
-                    dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%A, %B %e, %Y')}</time>
-                </footer>
-              </article>
-            </Layout>
-        );
-    }
+  render() {
+    return (
+      <Layout {...this.props}>
+        <article className="post post-full">
+          <header className="post-header inner-sm">
+            <div style={{display: 'flex'}}>
+            {_.get(this.props, 'pageContext.frontmatter.author', null) && (_.split(_.get(this.props, 'pageContext.frontmatter.author', null), ',').map((author, index) => {
+              return <a href={withPrefix(author.trim())}  className="author" >
+                <img className="profile-pic" src={withPrefix('images/' + author.trim() + '.png')} alt="profile_pic" />
+                <h6>{htmlToReact(author.trim())}</h6>
+              </a>
+            })
+            )}
+            </div>
+            <h1 className="post-title underline">{_.get(this.props, 'pageContext.frontmatter.title', null)}</h1>
+            {_.get(this.props, 'pageContext.frontmatter.subtitle', null) && (
+              <div className="post-subtitle">
+                {htmlToReact(_.get(this.props, 'pageContext.frontmatter.subtitle', null))}
+              </div>
+            )}
+          </header>
+          {_.get(this.props, 'pageContext.frontmatter.content_img_path', null) && (
+            <div className="post-image">
+              <img src={withPrefix(_.get(this.props, 'pageContext.frontmatter.content_img_path', null))} alt={_.get(this.props, 'pageContext.frontmatter.content_img_alt', null)} />
+            </div>
+          )}
+          <div className="post-content inner-sm">
+            {htmlToReact(_.get(this.props, 'pageContext.html', null))}
+          </div>
+          <footer className="post-meta inner-sm">
+            <time className="published"
+              dateTime={moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%Y-%m-%d %H:%M')}>{moment(_.get(this.props, 'pageContext.frontmatter.date', null)).strftime('%A, %B %e, %Y')}</time>
+          </footer>
+        </article>
+      </Layout>
+    );
+  }
 }
