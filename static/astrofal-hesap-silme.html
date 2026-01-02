@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AstroFal uygulaması hesap silme ve veri yönetimi sayfası">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>AstroFal - Hesap Silme</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0f0f0f;
+            color: #d8d8d8;
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.1em;
+        }
+
+        .developer-info {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 4px solid #6366f1;
+        }
+
+        .developer-info p {
+            margin: 5px 0;
+        }
+
+        .developer-info strong {
+            color: #fff;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.5em;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #6366f1;
+            display: inline-block;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 1.2em;
+            margin: 25px 0 15px;
+        }
+
+        .steps-container {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+
+        .method-title {
+            color: #6366f1;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .method-title .icon {
+            width: 28px;
+            height: 28px;
+            background: #6366f1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .steps li {
+            counter-increment: step-counter;
+            padding: 12px 0 12px 50px;
+            position: relative;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .steps li:last-child {
+            border-bottom: none;
+        }
+
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 32px;
+            height: 32px;
+            background: #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6366f1;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background: #2a2a2a;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .email-link {
+            color: #6366f1;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .email-link:hover {
+            border-bottom-color: #6366f1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        th {
+            background: #2a2a2a;
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .status-deleted {
+            color: #ef4444;
+            font-weight: 500;
+        }
+
+        .status-retained {
+            color: #f59e0b;
+            font-weight: 500;
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, #7f1d1d, #991b1b);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .warning-box h4 {
+            color: #fca5a5;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .warning-box ul {
+            margin-left: 20px;
+            color: #fecaca;
+        }
+
+        .warning-box li {
+            margin: 8px 0;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #1e3a5f, #1e40af);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-box h3 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .contact-box a {
+            color: #93c5fd;
+            font-size: 1.2em;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #333, transparent);
+            margin: 50px 0;
+        }
+
+        .lang-switch {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .lang-switch a {
+            color: #6366f1;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #6366f1;
+            border-radius: 25px;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .lang-switch a:hover {
+            background: #6366f1;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+            color: #666;
+        }
+
+        footer a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #6366f1;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            .steps li {
+                padding-left: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/logo.svg" alt="Asnus Logo" class="logo">
+            <div class="app-badge">AstroFal</div>
+            <h1>Hesap Silme</h1>
+        </header>
+
+        <div class="developer-info">
+            <p><strong>Uygulama:</strong> AstroFal - Astroloji ve Burç Uygulaması</p>
+            <p><strong>Geliştirici:</strong> Asnus</p>
+            <p><strong>İletişim:</strong> <a href="mailto:astrofal@asnus.com" class="email-link">astrofal@asnus.com</a></p>
+        </div>
+
+        <!-- TÜRKÇE -->
+        <section id="turkce">
+            <h2>Hesap Silme Adımları</h2>
+            <p>AstroFal uygulamasında hesabınızı ve verilerinizi silmek için aşağıdaki yöntemlerden birini kullanabilirsiniz:</p>
+
+            <div class="steps-container">
+                <div class="method-title">
+                    <span class="icon">1</span>
+                    Uygulama İçinden Silme
+                </div>
+                <ol class="steps">
+                    <li><span class="highlight">AstroFal</span> uygulamasını açın</li>
+                    <li><span class="highlight">Ayarlar</span> menüsüne gidin</li>
+                    <li><span class="highlight">Hesap</span> bölümüne tıklayın</li>
+                    <li><span class="highlight">Hesabımı Sil</span> seçeneğini seçin</li>
+                    <li>Onay ekranında <span class="highlight">Evet, Hesabımı Sil</span> butonuna tıklayın</li>
+                    <li>Hesabınız ve tüm verileriniz kalıcı olarak silinecektir</li>
+                </ol>
+            </div>
+
+            <div class="steps-container">
+                <div class="method-title">
+                    <span class="icon">2</span>
+                    E-posta ile Silme Talebi
+                </div>
+                <ol class="steps">
+                    <li><a href="mailto:astrofal@asnus.com?subject=AstroFal%20Hesap%20Silme%20Talebi" class="email-link">astrofal@asnus.com</a> adresine e-posta gönderin</li>
+                    <li>E-posta konusuna <span class="highlight">AstroFal Hesap Silme Talebi</span> yazın</li>
+                    <li>E-posta içeriğinde kayıtlı e-posta adresinizi ve kullanıcı adınızı belirtin</li>
+                    <li>Talebiniz <strong>30 gün içinde</strong> işleme alınacaktır</li>
+                    <li>İşlem tamamlandığında size onay e-postası gönderilecektir</li>
+                </ol>
+            </div>
+
+            <h2>Silinen Veriler</h2>
+            <p>Hesabınızı sildiğinizde aşağıdaki veriler <strong>kalıcı olarak silinir:</strong></p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Veri Türü</th>
+                        <th>Açıklama</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Profil Bilgileri</td>
+                        <td>Ad, e-posta, profil fotoğrafı</td>
+                        <td class="status-deleted">Kalıcı olarak silinir</td>
+                    </tr>
+                    <tr>
+                        <td>Burç Tercihleri</td>
+                        <td>Seçilen burç ve tercihler</td>
+                        <td class="status-deleted">Kalıcı olarak silinir</td>
+                    </tr>
+                    <tr>
+                        <td>Uygulama Geçmişi</td>
+                        <td>Günlük yorum geçmişi, favoriler</td>
+                        <td class="status-deleted">Kalıcı olarak silinir</td>
+                    </tr>
+                    <tr>
+                        <td>Bildirim Ayarları</td>
+                        <td>Push bildirim tercihleri</td>
+                        <td class="status-deleted">Kalıcı olarak silinir</td>
+                    </tr>
+                    <tr>
+                        <td>Cihaz Bilgileri</td>
+                        <td>Cihaz kimliği ve oturum verileri</td>
+                        <td class="status-deleted">Kalıcı olarak silinir</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Saklanan Veriler ve Süreler</h2>
+            <p>Bazı veriler yasal yükümlülükler nedeniyle belirli bir süre saklanabilir:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Veri Türü</th>
+                        <th>Saklama Süresi</th>
+                        <th>Neden</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>İşlem Kayıtları</td>
+                        <td>2 yıl</td>
+                        <td class="status-retained">Yasal yükümlülükler</td>
+                    </tr>
+                    <tr>
+                        <td>Anonim Analitik Verileri</td>
+                        <td>1 yıl</td>
+                        <td class="status-retained">Hizmet iyileştirme</td>
+                    </tr>
+                    <tr>
+                        <td>Destek Talep Kayıtları</td>
+                        <td>1 yıl</td>
+                        <td class="status-retained">Müşteri hizmetleri</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><em>Not: Saklanan veriler tamamen anonimleştirilmiş olup, sizinle ilişkilendirilemez.</em></p>
+
+            <div class="warning-box">
+                <h4>⚠️ Önemli Bilgiler</h4>
+                <ul>
+                    <li>Hesap silme işlemi <strong>geri alınamaz</strong></li>
+                    <li>Silme işlemi tamamlandıktan sonra verilerinize erişim mümkün olmayacaktır</li>
+                    <li>Aktif abonelikleriniz varsa, önce Google Play üzerinden iptal etmeniz önerilir</li>
+                    <li>Silme talebi işleme alındıktan sonra <strong>30 gün içinde</strong> tamamlanacaktır</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h3>İletişim</h3>
+                <p>Hesap silme işlemiyle ilgili sorularınız için:</p>
+                <a href="mailto:astrofal@asnus.com">astrofal@asnus.com</a>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>AstroFal</strong> by <a href="https://asnus.com">Asnus</a></p>
+            <p>&copy; 2025 Asnus. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
