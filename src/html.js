@@ -33,12 +33,12 @@ export default function HTML(props) {
   `,
           }}
         />
-          {/* Yandex Metrica */}
-          <noscript><div><img src="https://mc.yandex.ru/watch/88427880" style={{ position: 'absolute', left: '-9999px' }} alt="" /></div></noscript>
+        {/* Yandex Metrica */}
+        <noscript><div><img src="https://mc.yandex.ru/watch/88427880" style={{ position: 'absolute', left: '-9999px' }} alt="" /></div></noscript>
 
-          {/* Google Adsense */}
-          <meta name="google-adsense-account" content="ca-pub-3243488492732711" />
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3243488492732711" crossOrigin="anonymous"></script>
+        {/* Google Adsense */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1373717518987632"
+          crossorigin="anonymous"></script>
 
       </head>
       <body {...props.bodyAttributes}>
