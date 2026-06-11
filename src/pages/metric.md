@@ -1,3 +1,7 @@
+---
+title: Dashboard Rehberi
+template: page
+---
 # Dashboard Rehberi
 
 Bu doküman, **Dashboard** sayfasını başka birinin (veya başka bir yapay zekânın) **birebir** yapabilmesi için yazılmıştır. Adımları sırayla, eksiksiz uygula. Tahmin yürütme; burada ne yazıyorsa onu yap.
